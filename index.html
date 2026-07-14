@@ -168,6 +168,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <a href="#top" class="brand" style="display:flex;align-items:center;gap:12px"><img src="assets/emblem_bs1.png" alt="" style="height:38px"><span>Bahía Secreta<small>LA HERRADURA</small></span></a>
   <div class="links">
     <a href="#activo" data-es="El Activo" data-en="The Asset">El Activo</a>
+    <a href="#urbanismo" data-es="Urbanismo" data-en="Planning">Urbanismo</a>
     <a href="#masterplan" data-es="Masterplan" data-en="Masterplan">Masterplan</a>
     <a href="#enclave" data-es="El Enclave" data-en="The Enclave">El Enclave</a>
     <a href="#mercado" data-es="Mercado" data-en="Market">Mercado</a>
@@ -224,6 +225,77 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       </div>
       <div class="reveal"><img src="assets/R1_aerea_plan_construido.jpg" alt="Vista aérea del sector P-6 desarrollado sobre la bahía de La Herradura"></div>
     </div>
+  </div>
+</section>
+
+<!-- PARAMETROS URBANISTICOS -->
+<style>
+#urbanismo .donut{width:186px;height:186px;border-radius:50%;position:relative;margin:0 auto 22px}
+#urbanismo .donut::after{content:"";position:absolute;inset:27%;border-radius:50%;background:var(--blue)}
+#urbanismo .donut .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2}
+#urbanismo .donut .c b{font-family:var(--serif);font-size:1.7rem;color:var(--brass-2);line-height:1}
+#urbanismo .donut .c span{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);margin-top:4px}
+#urbanismo .legend{display:flex;flex-direction:column;gap:9px;max-width:300px;margin:0 auto}
+#urbanismo .legend div{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--sand)}
+#urbanismo .legend i{width:13px;height:13px;border-radius:3px;flex:none}
+#urbanismo .legend b{color:var(--cal);font-weight:500;margin-left:auto;font-family:var(--serif);font-size:1.05rem}
+#urbanismo .dcard{text-align:center}
+#urbanismo .dcard h3{font-family:var(--sans);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:24px}
+#urbanismo .ubar{margin:16px 0}
+#urbanismo .ubar .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:.92rem;margin-bottom:7px;color:var(--sand)}
+#urbanismo .ubar .lab b{color:var(--brass-2);font-family:var(--serif);font-size:1.2rem}
+#urbanismo .ubar .track{height:14px;background:rgba(255,255,255,.08);border-radius:7px;overflow:hidden}
+#urbanismo .ubar .fill{height:100%;border-radius:7px}
+</style>
+<section id="urbanismo">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="Parámetros urbanísticos" data-en="Planning parameters">Parámetros urbanísticos</div>
+    <h2 class="h-sec reveal" data-es="Lo que permite el planeamiento" data-en="What the plan allows">Lo que permite el planeamiento</h2>
+    <p class="lead reveal" data-es="Parámetros del sector SC2 según el Avance del PGOU de Almuñécar y el sector colindante MP-98 (ya aprobado, mismo índice 0,30). Cifras orientativas, a fijar en el Plan Parcial." data-en="SC2 parameters per Almuñécar's draft General Plan and the adjacent, already-approved MP-98 sector (same 0.30 ratio). Indicative figures, to be fixed in the Partial Plan.">Parámetros del sector SC2 según el Avance del PGOU y el sector colindante MP-98 (mismo índice 0,30).</p>
+
+    <div class="grid four reveal" style="margin-top:44px">
+      <div class="stat"><div class="n">0,30</div><div class="t" data-es="m²t/m²s · edificabilidad bruta" data-en="FAR · gross buildability">m²t/m²s · edificabilidad</div></div>
+      <div class="stat"><div class="n">53.415</div><div class="t" data-es="m²t de techo edificable" data-en="m² of buildable floor area">m²t de techo edificable</div></div>
+      <div class="stat"><div class="n">≤267</div><div class="t" data-es="viviendas máx. · 15 viv/ha" data-en="max. dwellings · 15/ha">viviendas máx. · 15 viv/ha</div></div>
+      <div class="stat"><div class="n" style="font-size:2.2rem">3 plantas</div><div class="t" data-es="altura máx. · 10 m (ref. MP-98)" data-en="max. height · 10 m (MP-98 ref.)">altura máx. · 10 m</div></div>
+    </div>
+
+    <div class="grid two reveal" style="margin-top:60px;gap:50px">
+      <div class="dcard">
+        <h3 data-es="Reparto del suelo" data-en="Land distribution">Reparto del suelo</h3>
+        <div class="donut" style="background:conic-gradient(#C39A5B 0 60%,#5E6B52 60% 80%,#3E9EA6 80% 92%,#E7DCC8 92% 100%)"><div class="c"><b>~60%</b><span data-es="privado" data-en="private">privado</span></div></div>
+        <div class="legend">
+          <div><i style="background:#C39A5B"></i><span data-es="Suelo privado (edificable)" data-en="Private (buildable) land">Suelo privado (edificable)</span><b>~60%</b></div>
+          <div><i style="background:#5E6B52"></i><span data-es="Zonas verdes y espacios libres" data-en="Green & open spaces">Zonas verdes y espacios libres</span><b>~20%</b></div>
+          <div><i style="background:#3E9EA6"></i><span data-es="Viario, aceras y aparcamiento" data-en="Roads, pavements & parking">Viario, aceras y aparcamiento</span><b>~12%</b></div>
+          <div><i style="background:#E7DCC8"></i><span data-es="Equipamientos y dotaciones" data-en="Community facilities">Equipamientos y dotaciones</span><b>~8%</b></div>
+        </div>
+      </div>
+      <div class="dcard">
+        <h3 data-es="Mix de usos (escenario ref. MP-98)" data-en="Use mix (MP-98 scenario)">Mix de usos</h3>
+        <div class="donut" style="background:conic-gradient(#C39A5B 0 51%,#3E9EA6 51% 100%)"><div class="c"><b>51/49</b><span data-es="tur · resid" data-en="tour · resid">tur · resid</span></div></div>
+        <div class="legend">
+          <div><i style="background:#C39A5B"></i><span data-es="Turístico (hotel, aparthotel)" data-en="Tourism (hotel, apart-hotel)">Turístico (hotel, aparthotel)</span><b>~51%</b></div>
+          <div><i style="background:#3E9EA6"></i><span data-es="Residencial de lujo" data-en="Luxury residential">Residencial de lujo</span><b>~49%</b></div>
+          <div><i style="background:rgba(255,255,255,.28)"></i><span data-es="Terciario / comercial (compatible)" data-en="Retail (compatible use)">Terciario / comercial (compatible)</span><b>≤5%</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:64px;max-width:840px">
+      <h3 style="font-family:var(--sans);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:26px" data-es="Programa de viviendas · tipologías" data-en="Housing programme · typologies">Programa de viviendas · tipologías</h3>
+      <div class="ubar">
+        <div class="lab"><span data-es="Plurifamiliar (bloque abierto, 3–5 plantas)" data-en="Multi-family (open blocks, 3–5 storeys)">Plurifamiliar (bloque, 3–5 plantas)</span><b>~105–145 <span style="font-size:.8rem;font-family:var(--sans);color:var(--sand)">uds</span></b></div>
+        <div class="track"><div class="fill" style="width:68%;background:linear-gradient(90deg,#3E9EA6,#7fc4c9)"></div></div>
+      </div>
+      <div class="ubar">
+        <div class="lab"><span data-es="Unifamiliar (aislada / pareada, PB+1)" data-en="Single-family (detached / semi, G+1)">Unifamiliar (aislada / pareada)</span><b>~55–65 <span style="font-size:.8rem;font-family:var(--sans);color:var(--sand)">uds</span></b></div>
+        <div class="track"><div class="fill" style="width:32%;background:linear-gradient(90deg,#5E6B52,#8a9a72)"></div></div>
+      </div>
+      <p style="font-size:.95rem;color:var(--sand);margin-top:20px" data-es="Rango total: 160–210 viviendas de lujo, más ~27.000 m²t turísticos, equivalentes a ~270–360 plazas hoteleras (hotel + apart-hotel 5★)." data-en="Total range: 160–210 luxury dwellings, plus ~27,000 m²t of tourism use, equivalent to ~270–360 hotel keys (hotel + 5★ apart-hotel).">Rango total: 160–210 viviendas de lujo + ~27.000 m²t turísticos (~270–360 plazas hoteleras).</p>
+    </div>
+
+    <p class="disc reveal" data-es="Fuente: Avance del PGOU de Almuñécar (tabla de sectores) y ordenanzas del sector colindante MP-98, con estándares de cesión de la Ley LISTA/LOUA (espacios libres ≥20%, equipamientos ≥5%). El uso global del sector es turístico; el componente residencial y el reparto por tipologías son escenarios de referencia según el comparable MP-98, a fijar en el Plan Parcial y sujetos a la aprobación definitiva del planeamiento." data-en="Source: Almuñécar's draft General Plan (sector table) and the adjacent MP-98 sector ordinances, with LISTA/LOUA cession standards (open space ≥20%, facilities ≥5%). The sector's global use is tourism; the residential component and typology split are reference scenarios per the MP-98 comparable, to be fixed in the Partial Plan and subject to final planning approval.">Fuente: Avance del PGOU de Almuñécar y ordenanzas del sector colindante MP-98, con estándares de cesión LISTA/LOUA. El componente residencial y las tipologías son escenarios de referencia (comparable MP-98), a fijar en el Plan Parcial.</p>
   </div>
 </section>
 
