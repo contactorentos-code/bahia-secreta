@@ -171,7 +171,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <a href="#masterplan" data-es="Masterplan" data-en="Masterplan">Masterplan</a>
     <a href="#enclave" data-es="El Enclave" data-en="The Enclave">El Enclave</a>
     <a href="#mercado" data-es="Mercado" data-en="Market">Mercado</a>
-    <a href="#numeros" data-es="Cifras" data-en="Figures">Cifras</a>
+    <a href="#numeros" data-es="Precio" data-en="Price">Precio</a>
     <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     <button class="langbtn" id="lang" onclick="toggleLang()">EN</button>
   </div>
@@ -200,8 +200,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <div class="grid four" style="margin-top:52px">
       <div class="stat reveal"><div class="n">17,8 ha</div><div class="t" data-es="Superficie del sector" data-en="Sector surface">Superficie del sector</div></div>
       <div class="stat reveal"><div class="n">53.415</div><div class="t" data-es="m² de techo edificable" data-en="m² of buildable floor">m² de techo edificable</div></div>
-      <div class="stat reveal"><div class="n">80–89 M€</div><div class="t" data-es="Valor de la operación (suelo)*" data-en="Land transaction value*">Valor de la operación (suelo)*</div></div>
-      <div class="stat reveal"><div class="n">15–22%</div><div class="t" data-es="TIR estimada" data-en="Estimated IRR">TIR estimada</div></div>
+      <div class="stat reveal"><div class="n">500–700</div><div class="t" data-es="€/m² · precio de oferta del suelo" data-en="€/m² · land offer price">€/m² · precio del suelo</div></div>
+      <div class="stat reveal"><div class="n" style="font-size:2rem">5★ DAIA</div><div class="t" data-es="hotel catalizador a &lt;1 km" data-en="catalyst hotel &lt;1 km away">hotel catalizador a &lt;1 km</div></div>
     </div>
   </div>
 </section>
@@ -317,59 +317,20 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <!-- NUMEROS -->
 <section id="numeros">
   <div class="wrap">
-    <div class="label eyebrow reveal" data-es="Las cifras" data-en="The figures">Las cifras</div>
-    <h2 class="h-sec reveal" data-es="Del suelo a la plusvalía" data-en="From land to capital gain">Del suelo a la plusvalía</h2>
-    <p class="lead reveal" data-es="La tesis del fondo es de suelo/entitlement: comprar hoy a precio pre-PGOU, obtener el planeamiento firme y revender el suelo ya recalificado en ~4 años, capturando la plusvalía urbanística. Es una estrategia oportunista con TIR de doble dígito. El desarrollo completo a 10–12 años es una alternativa, pero con retorno de promotor, no de fondo." data-en="The fund's thesis is a land/entitlement play: buy today at pre-plan pricing, secure firm planning and resell the entitled land in ~4 years, capturing the planning uplift. An opportunistic strategy with double-digit IRR. Full development over 10–12 years is an alternative, but with developer-level returns, not fund-level.">La tesis del fondo es de suelo/entitlement: comprar hoy pre-PGOU y revender el suelo recalificado en ~4 años, capturando la plusvalía urbanística.</p>
-    <table class="tbl reveal">
-      <thead><tr>
-        <th data-es="Concepto" data-en="Item">Concepto</th>
-        <th data-es="Conservador" data-en="Conservative">Conservador</th>
-        <th data-es="Base" data-en="Base">Base</th>
-        <th data-es="Optimista" data-en="Optimistic">Optimista</th>
-      </tr></thead>
-      <tbody>
-        <tr><td data-es="Techo edificable (0,30 m²t/m²s)" data-en="Buildable floor area (0.30 FAR)">Techo edificable (0,30)</td><td class="num">53.415</td><td class="num">53.415</td><td class="num">53.415</td></tr>
-        <tr><td data-es="Precio de compra del suelo hoy · pre-PGOU (€/m²)" data-en="Land purchase price today · pre-plan (€/m²)">Compra del suelo hoy (€/m²)</td><td class="num">280</td><td class="num">330</td><td class="num">380</td></tr>
-        <tr><td data-es="Inversión de entrada (suelo)" data-en="Entry investment (land)">Inversión de entrada</td><td class="num">50 M€</td><td class="num">59 M€</td><td class="num">68 M€</td></tr>
-        <tr><td data-es="Valor del suelo ya recalificado · salida ~4 años" data-en="Entitled land value · exit ~4 yrs">Valor del suelo recalificado</td><td class="num">69 M€</td><td class="num">114 M€</td><td class="num">136 M€</td></tr>
-        <tr><td data-es="Beneficio del fondo (plusvalía del planeamiento)" data-en="Fund profit (planning uplift)">Beneficio del fondo</td><td class="num">~14 M€</td><td class="num">~49 M€</td><td class="num">~61 M€</td></tr>
-        <tr><td data-es="Múltiplo de capital (MOIC)" data-en="Equity multiple (MOIC)">Múltiplo de capital</td><td class="num">1,25×</td><td class="num">1,75×</td><td class="num">1,8×</td></tr>
-        <tr><td data-es="TIR neta anual del fondo (≈4 años)" data-en="Fund net IRR p.a. (≈4 yrs)">TIR neta anual (≈4 años)</td><td class="num">~6%</td><td class="num">~15%</td><td class="num">~19%</td></tr>
-      </tbody>
-    </table>
-    <p class="disc reveal" data-es="* El valor del suelo recalificado (salida) deriva del valor bruto de ventas del producto terminado (GDV 374–427 M€, a precios de entrega 2033–2035) menos costes de desarrollo y margen de promotor (~20%). La TIR corresponde a la reventa del suelo tras la aprobación del PGOU (~4 años). El precio de compra hoy incorpora el descuento por el riesgo de planeamiento en tramitación. Cifras orientativas basadas en parámetros urbanísticos oficiales y comparables de mercado; sujetas a due diligence y a la aprobación definitiva del planeamiento. No constituyen oferta ni recomendación de inversión." data-en="* The entitled land value (exit) derives from the gross development value of the finished product (GDV €374–427M, at 2033–2035 delivery prices) less development costs and developer margin (~20%). The IRR corresponds to reselling the land after plan approval (~4 years). Today's purchase price embeds the discount for pending-planning risk. Indicative figures based on official planning parameters and market comparables; subject to due diligence and final plan approval. Not an offer nor investment advice.">* El valor del suelo recalificado (salida) deriva del GDV del producto terminado (374–427 M€) menos costes de desarrollo y margen de promotor. La TIR es la de la reventa del suelo tras aprobarse el PGOU (~4 años). El precio de compra hoy incorpora el descuento por riesgo de planeamiento. Cifras orientativas sujetas a due diligence y a la aprobación definitiva del planeamiento.</p>
+    <div class="label eyebrow reveal" data-es="El precio" data-en="The price">El precio</div>
+    <h2 class="h-sec reveal" data-es="Los últimos metros de suelo virgen junto al mar" data-en="The last metres of untouched seafront land">Los últimos metros de suelo virgen junto al mar</h2>
+    <p class="lead reveal" data-es="El sector P-6 es la última gran bolsa de suelo finalista frente a la playa de La Herradura: 17,8 hectáreas de uso turístico en un paraje natural resguardado entre dos cabos, con la Sierra de la Almijara cayendo al mar. Un activo escaso e irrepetible, que solo aparece una vez por generación." data-en="Sector P-6 is the last large development-ready seafront parcel in La Herradura: 17.8 hectares of tourism-use land in a natural setting sheltered between two headlands, where the Sierra de la Almijara drops into the sea. A scarce, irreplaceable asset that appears only once a generation.">El sector P-6 es la última gran bolsa de suelo finalista frente a la playa de La Herradura: 17,8 hectáreas en un paraje natural entre dos cabos. Un activo escaso e irrepetible.</p>
+    <div class="grid four reveal" style="margin-top:48px">
+      <div class="stat"><div class="n">500–700</div><div class="t" data-es="€/m² de suelo" data-en="€/m² of land">€/m² de suelo</div></div>
+      <div class="stat"><div class="n">17,8 ha</div><div class="t" data-es="178.048 m² · en una sola pieza" data-en="178,048 m² · single parcel">178.048 m² · una sola pieza</div></div>
+      <div class="stat"><div class="n" style="font-size:2rem">1ª línea</div><div class="t" data-es="frente a la playa" data-en="beachfront">frente a la playa</div></div>
+      <div class="stat"><div class="n" style="font-size:2rem" data-es="Turístico" data-en="Tourism">Turístico</div><div class="t" data-es="uso global · baja densidad" data-en="global use · low density">uso global · baja densidad</div></div>
+    </div>
+    <p class="disc reveal" data-es="Precio de oferta orientativo del suelo, variable según parcela. La documentación urbanística, técnica y de mercado se facilita a inversores cualificados, bajo acuerdo de confidencialidad, para su propio análisis. No constituye oferta vinculante ni recomendación de inversión." data-en="Indicative land offer price, varying by plot. Planning, technical and market documentation is provided to qualified investors, under a confidentiality agreement, for their own analysis. Not a binding offer nor investment advice.">Precio de oferta orientativo del suelo, según parcela. La documentación se facilita a inversores cualificados bajo acuerdo de confidencialidad para su propio análisis. No constituye oferta vinculante ni recomendación de inversión.</p>
   </div>
 </section>
 <div class="hair"></div>
 
-<!-- HOJA DE RUTA -->
-<section id="ruta" class="alt">
-  <div class="wrap">
-    <div class="label eyebrow reveal" data-es="Costes & cronograma" data-en="Costs & timeline">Costes & cronograma</div>
-    <h2 class="h-sec reveal" data-es="Los deberes hechos: costes analizados y plazos realistas" data-en="Homework done: analysed costs and a realistic timeline">Los deberes hechos: costes analizados y plazos realistas</h2>
-    <p class="lead reveal" data-es="Costes calculados sobre las ordenanzas fiscales de Almuñécar (ICIO 3,2%), los módulos del COAG Granada y la Ley LISTA. Un desarrollo por fases con el riesgo acotado." data-en="Costs computed from Almuñécar's fiscal ordinances (ICIO 3.2%), COAG Granada modules and the LISTA law. A phased development with bounded risk.">Costes calculados sobre las ordenanzas fiscales de Almuñécar (ICIO 3,2%), los módulos del COAG Granada y la Ley LISTA.</p>
-
-    <table class="tbl reveal" style="margin-bottom:44px">
-      <thead><tr><th data-es="Partida de coste de desarrollo" data-en="Development cost item">Partida</th><th data-es="Referencia" data-en="Reference">Referencia</th><th>Aprox.</th></tr></thead>
-      <tbody>
-        <tr><td data-es="Construcción (contrata, calidad alta)" data-en="Construction (contract, high quality)">Construcción (PEC)</td><td>PEM ×1,19</td><td class="num">~102 M€</td></tr>
-        <tr><td data-es="Urbanización + gestión" data-en="Urbanisation + management">Urbanización + gestión</td><td>~100 €/m²s</td><td class="num">~20 M€</td></tr>
-        <tr><td data-es="Impuestos y tasas municipales" data-en="Municipal taxes & fees">Impuestos y tasas (Almuñécar)</td><td>ICIO 3,2% + licencias</td><td class="num">~6 M€</td></tr>
-        <tr><td data-es="Honorarios técnicos + seguros + financiación" data-en="Professional fees + insurance + financing">Honorarios + seguros + financiación</td><td>6–10% PEM</td><td class="num">~14 M€</td></tr>
-        <tr><td data-es="Comercialización + gastos generales" data-en="Sales & marketing + overheads">Comercialización + generales</td><td>~9% ventas</td><td class="num">~23 M€</td></tr>
-      </tbody>
-    </table>
-
-    <div class="tl reveal">
-      <div class="it"><div class="yr" data-es="Año 0 · Compra" data-en="Year 0 · Acquisition">Año 0 · Compra</div><div class="d" data-es="Opción de compra condicionada a la aprobación del planeamiento: capital en riesgo mínimo hasta tener seguridad jurídica." data-en="Purchase option conditional on planning approval: minimal capital at risk until legal certainty.">Opción de compra condicionada a la aprobación del planeamiento: capital en riesgo mínimo.</div></div>
-      <div class="it"><div class="yr" data-es="Año 1–2" data-en="Year 1–2">Año 1–2</div><div class="d" data-es="Aprobación definitiva del PGOU + arranque del Plan Parcial. Apertura del hotel 5★ DAIA (~2028)." data-en="Final PGOU approval + start of the Partial Plan. DAIA 5★ hotel opening (~2028).">Aprobación definitiva del PGOU + arranque del Plan Parcial. Apertura del hotel 5★ DAIA (~2028).</div></div>
-      <div class="it"><div class="yr" data-es="Año 2–4" data-en="Year 2–4">Año 2–4</div><div class="d" data-es="Plan Parcial, Proyecto de Urbanización y Reparcelación aprobados." data-en="Partial Plan, Urbanisation Project and Reparcelling approved.">Plan Parcial, Proyecto de Urbanización y Reparcelación aprobados.</div></div>
-      <div class="it"><div class="yr" data-es="Año 4–7" data-en="Year 4–7">Año 4–7</div><div class="d" data-es="Obras de urbanización por fases + primeras licencias de edificación." data-en="Urbanisation works in phases + first building permits.">Obras de urbanización por fases + primeras licencias de edificación.</div></div>
-      <div class="it"><div class="yr" data-es="Año 6–10" data-en="Year 6–10">Año 6–10</div><div class="d" data-es="Construcción por fases + preventa sobre plano." data-en="Phased construction + off-plan pre-sales.">Construcción por fases + preventa sobre plano.</div></div>
-      <div class="it"><div class="yr" data-es="Año 8–12" data-en="Year 8–12">Año 8–12</div><div class="d" data-es="Entregas y venta de las últimas unidades. Escenario optimista: 7–8 años." data-en="Handovers and sale of the final units. Optimistic scenario: 7–8 years.">Entregas y venta de las últimas unidades. Escenario optimista: 7–8 años.</div></div>
-    </div>
-  </div>
-</section>
 
 <!-- CALLOUT -->
 <section>
