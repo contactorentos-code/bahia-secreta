@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahía Secreta — La Herradura · Costa Tropical</title>
+<meta name="description" content="Oportunidad de inversión: Sector P-6 (SC2) de La Herradura, Almuñécar. 17,8 ha de suelo turístico en primera línea de la Costa Tropical.">
+<!-- Open Graph / WhatsApp preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bahía Secreta">
+<meta property="og:title" content="Bahía Secreta — La Herradura · Costa Tropical">
+<meta property="og:description" content="17,8 ha de suelo turístico en primera línea de playa. Oportunidad de inversión junto al hotel DAIA 5★. Dossier confidencial.">
+<meta property="og:url" content="https://contactorentos-code.github.io/bahia-secreta/">
+<meta property="og:image" content="https://contactorentos-code.github.io/bahia-secreta/assets/og_preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bahía Secreta — La Herradura · Costa Tropical">
+<meta name="twitter:description" content="17,8 ha de suelo turístico en primera línea de playa junto al hotel DAIA 5★.">
+<meta name="twitter:image" content="https://contactorentos-code.github.io/bahia-secreta/assets/og_preview.jpg">
+<link rel="icon" type="image/png" href="assets/emblem_bs1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0C3B4A; --blue-2:#0a2f3b; --teal:#3E9EA6; --brass:#C39A5B; --brass-2:#E4C285;
+  --sand:#E7DCC8; --cal:#F6F3EC; --ink:#1C2529; --olive:#5E6B52;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--blue);color:var(--cal);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500;line-height:1.1}
+.label{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+section{padding:110px 0;position:relative}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:18px 32px;background:linear-gradient(180deg,rgba(10,47,59,.85),rgba(10,47,59,0));backdrop-filter:blur(6px);transition:.3s}
+nav.solid{background:rgba(9,42,53,.96);box-shadow:0 1px 0 rgba(195,154,91,.25)}
+nav .brand{font-family:var(--serif);font-size:1.35rem;letter-spacing:.12em;color:var(--cal)}
+nav .brand small{display:block;font-family:var(--sans);font-size:.55rem;letter-spacing:.35em;color:var(--brass);margin-top:2px}
+nav .links{display:flex;gap:30px;align-items:center;font-size:.8rem;letter-spacing:.08em}
+nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--brass-2)}
+.langbtn{border:1px solid var(--brass);color:var(--brass);background:none;padding:6px 12px;border-radius:2px;font-family:var(--sans);
+  font-size:.72rem;letter-spacing:.15em;cursor:pointer;transition:.2s}
+.langbtn:hover{background:var(--brass);color:var(--blue)}
+@media(max-width:820px){nav .links a:not(.langbtn){display:none}}
+
+/* HERO */
+.hero{height:100vh;min-height:640px;display:flex;align-items:flex-end;padding-bottom:9vh;
+  background:linear-gradient(180deg,rgba(12,59,74,.15),rgba(12,59,74,.75)),url('assets/B7_hero_bahia_atardecer.jpg') center/cover no-repeat}
+.hero .wrap{width:100%}
+.hero h1{font-size:clamp(3rem,8vw,6.6rem);letter-spacing:.02em}
+.hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.6vw,1.9rem);color:var(--sand);margin-top:8px}
+.hero .meta{margin-top:26px;display:flex;gap:34px;flex-wrap:wrap;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cal)}
+.hero .meta span{border-left:2px solid var(--brass);padding-left:12px}
+.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.65rem;letter-spacing:.3em;color:var(--brass);opacity:.8}
+
+/* GENERIC */
+.eyebrow{margin-bottom:18px}
+.h-sec{font-size:clamp(2.1rem,4.5vw,3.4rem);margin-bottom:26px}
+.lead{font-size:1.15rem;max-width:760px;color:var(--sand)}
+.grid{display:grid;gap:28px}
+.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.two,.three,.four{grid-template-columns:1fr}}
+.alt{background:var(--blue-2)}
+.hair{height:1px;background:linear-gradient(90deg,transparent,rgba(195,154,91,.5),transparent);margin:0 auto;max-width:1200px}
+
+/* STАТ CARDS */
+.stat{border:1px solid rgba(195,154,91,.3);padding:30px 26px;background:rgba(255,255,255,.02);border-radius:3px}
+.stat .n{font-family:var(--serif);font-size:2.9rem;color:var(--brass-2);line-height:1}
+.stat .t{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-top:12px;color:var(--sand)}
+
+/* FEATURE ROWS */
+.row{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.row.rev{grid-template-columns:.95fr 1.05fr}
+@media(max-width:900px){.row,.row.rev{grid-template-columns:1fr;gap:28px}}
+.row img{border-radius:4px;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.row ul{list-style:none;margin-top:20px}
+.row li{padding:9px 0 9px 26px;position:relative;border-bottom:1px solid rgba(255,255,255,.07);font-size:.98rem}
+.row li:before{content:"";position:absolute;left:0;top:17px;width:10px;height:10px;border:1.5px solid var(--brass);transform:rotate(45deg)}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.gal figure{position:relative;overflow:hidden;border-radius:3px}
+.gal img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:0;bottom:0;right:0;padding:14px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  background:linear-gradient(0deg,rgba(10,47,59,.9),transparent);color:var(--cal)}
+.gal .big{grid-column:span 4;grid-row:span 2}.gal .med{grid-column:span 2}.gal .sm{grid-column:span 2}
+@media(max-width:900px){.gal{grid-template-columns:1fr 1fr}.gal .big,.gal .med,.gal .sm{grid-column:span 1}}
+
+/* TABLE */
+.tbl{width:100%;border-collapse:collapse;margin-top:20px;font-size:.95rem}
+.tbl th,.tbl td{text-align:left;padding:14px 16px;border-bottom:1px solid rgba(195,154,91,.2)}
+.tbl th{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.tbl td.num{font-family:var(--serif);font-size:1.25rem;color:var(--brass-2)}
+.tbl tr:hover td{background:rgba(255,255,255,.02)}
+
+/* TIMELINE */
+.tl{position:relative;margin-top:40px;padding-left:28px}
+.tl:before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--brass),transparent)}
+.tl .it{position:relative;padding:0 0 34px 30px}
+.tl .it:before{content:"";position:absolute;left:-1px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 4px var(--blue)}
+.tl .yr{font-family:var(--serif);font-size:1.5rem;color:var(--brass-2)}
+.tl .d{font-size:.95rem;color:var(--sand)}
+
+/* CALLOUT */
+.callout{background:rgba(255,255,255,.03);border:1px solid rgba(195,154,91,.35);border-radius:4px;padding:56px 44px;text-align:center}
+.callout .q{font-family:var(--serif);font-style:italic;font-size:1.8rem;color:var(--cal);max-width:820px;margin:0 auto}
+
+/* PORTADA + IMPRESIÓN PDF */
+.print-cover{display:none}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  @page{size:A4;margin:0}
+  html,body{background:var(--blue)}
+  nav,.scrollcue{display:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .hero{display:none!important}
+  .print-cover{display:flex!important;flex-direction:column;align-items:center;justify-content:center;height:297mm;
+    background:linear-gradient(180deg,rgba(12,59,74,.35),rgba(12,59,74,.9)),url('assets/B7_hero_bahia_atardecer.jpg') center/cover no-repeat;text-align:center;page-break-after:always}
+  .print-cover img{height:130px;margin-bottom:26px}
+  .print-cover .pc-t{font-family:var(--serif);font-size:46pt;color:var(--cal);line-height:1}
+  .print-cover .pc-s{font-family:var(--serif);font-style:italic;font-size:16pt;color:var(--sand);margin-top:8px}
+  .print-cover .pc-k{margin-top:34px;font-size:9pt;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
+  section{padding:16mm 0!important;page-break-inside:avoid}
+  body{font-size:10.5pt}
+  .h-sec{font-size:22pt}.lead{font-size:11pt}
+  .row img,.gal img,.stat{box-shadow:none!important}
+  .gal{grid-template-columns:repeat(6,1fr)}
+}
+
+/* CONTACT */
+.contact{background:linear-gradient(180deg,var(--blue),#08252f)}
+.contact .card{border:1px solid rgba(195,154,91,.35);border-radius:4px;padding:44px;background:rgba(255,255,255,.02);text-align:center}
+.btn{display:inline-block;margin-top:8px;padding:15px 34px;border:1px solid var(--brass);color:var(--brass);letter-spacing:.15em;
+  text-transform:uppercase;font-size:.78rem;border-radius:2px;transition:.25s}
+.btn:hover{background:var(--brass);color:var(--blue)}
+.btn.solid{background:var(--brass);color:var(--blue);margin-left:10px}.btn.solid:hover{background:var(--brass-2)}
+
+/* FOOTER */
+footer{background:#08222c;padding:48px 0;font-size:.82rem;color:rgba(246,243,236,.6)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.disc{font-size:.72rem;color:rgba(246,243,236,.4);max-width:640px;line-height:1.6;margin-top:22px}
+.viflip{display:flex;align-items:center;gap:10px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+.reveal{opacity:0;transform:translateY(24px);transition:.9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);background:var(--brass);padding:5px 12px;border-radius:2px;font-weight:600}
+</style>
+</head>
+<body>
+
+<div class="print-cover">
+  <img src="assets/emblem_bs1.png" alt="">
+  <div class="pc-t">Bahía Secreta</div>
+  <div class="pc-s" data-es="La Herradura · Costa Tropical" data-en="La Herradura · Costa Tropical">La Herradura · Costa Tropical</div>
+  <div class="pc-k" data-es="Dossier de inversión · Sector P-6 (SC2) · Confidencial" data-en="Investment dossier · Sector P-6 (SC2) · Confidential">Dossier de inversión · Sector P-6 (SC2) · Confidencial</div>
+</div>
+
+<nav id="nav">
+  <a href="#top" class="brand" style="display:flex;align-items:center;gap:12px"><img src="assets/emblem_bs1.png" alt="" style="height:38px"><span>Bahía Secreta<small>LA HERRADURA</small></span></a>
+  <div class="links">
+    <a href="#activo" data-es="El Activo" data-en="The Asset">El Activo</a>
+    <a href="#masterplan" data-es="Masterplan" data-en="Masterplan">Masterplan</a>
+    <a href="#enclave" data-es="El Enclave" data-en="The Enclave">El Enclave</a>
+    <a href="#mercado" data-es="Mercado" data-en="Market">Mercado</a>
+    <a href="#numeros" data-es="Cifras" data-en="Figures">Cifras</a>
+    <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    <button class="langbtn" id="lang" onclick="toggleLang()">EN</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="label" data-es="Oportunidad de inversión · Costa Tropical, España" data-en="Investment opportunity · Costa Tropical, Spain">Oportunidad de inversión · Costa Tropical, España</div>
+    <h1>Bahía Secreta</h1>
+    <div class="sub" data-es="El último gran suelo frente al mar de La Herradura" data-en="The last great seafront land in La Herradura">El último gran suelo frente al mar de La Herradura</div>
+    <div class="meta">
+      <span data-es="Sector P-6 · 17,8 hectáreas" data-en="Sector P-6 · 17.8 hectares">Sector P-6 · 17,8 hectáreas</span>
+      <span data-es="Uso turístico · 53.415 m² edificables" data-en="Tourist use · 53,415 m² buildable">Uso turístico · 53.415 m² edificables</span>
+      <span data-es="Primera línea de playa" data-en="Beachfront">Primera línea de playa</span>
+    </div>
+  </div>
+  <div class="scrollcue">SCROLL</div>
+</header>
+
+<!-- OPORTUNIDAD -->
+<section id="oportunidad">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="La oportunidad" data-en="The opportunity">La oportunidad</div>
+    <h2 class="h-sec reveal" data-es="Una pieza irrepetible en la costa que viene" data-en="An irreplaceable piece on the coast of the future">Una pieza irrepetible en la costa que viene</h2>
+    <p class="lead reveal" data-es="Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,8 hectáreas de suelo urbanizable de uso turístico en primera línea de una de las bahías más bellas del Mediterráneo español. Un enclave protegido por las montañas de la Almijara, a las puertas de un nuevo ciclo premium impulsado por el primer hotel de 5 estrellas de la Costa Tropical." data-en="Bahía Secreta is the development brand for Sector P-6 (SC2) in La Herradura, Almuñécar: 17.8 hectares of tourist-use developable land on the first line of one of the most beautiful bays of the Spanish Mediterranean. A cove sheltered by the Almijara mountains, on the verge of a new premium cycle driven by the first 5-star hotel on the Costa Tropical.">Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,8 hectáreas de suelo urbanizable de uso turístico en primera línea de una de las bahías más bellas del Mediterráneo español.</p>
+    <div class="grid four" style="margin-top:52px">
+      <div class="stat reveal"><div class="n">17,8 ha</div><div class="t" data-es="Superficie del sector" data-en="Sector surface">Superficie del sector</div></div>
+      <div class="stat reveal"><div class="n">53.415</div><div class="t" data-es="m² de techo edificable" data-en="m² of buildable floor">m² de techo edificable</div></div>
+      <div class="stat reveal"><div class="n">80–89 M€</div><div class="t" data-es="Valor de la operación (suelo)*" data-en="Land transaction value*">Valor de la operación (suelo)*</div></div>
+      <div class="stat reveal"><div class="n">15–22%</div><div class="t" data-es="TIR estimada" data-en="Estimated IRR">TIR estimada</div></div>
+    </div>
+  </div>
+</section>
+<div class="hair"></div>
+
+<!-- EL ACTIVO -->
+<section id="activo" class="alt">
+  <div class="wrap">
+    <div class="row">
+      <div class="reveal">
+        <div class="label eyebrow" data-es="El activo · Sector P-6 (SC2)" data-en="The asset · Sector P-6 (SC2)">El activo · Sector P-6 (SC2)</div>
+        <h2 class="h-sec" data-es="17,8 hectáreas frente al mar, sin desarrollar desde 1987" data-en="17.8 seafront hectares, undeveloped since 1987">17,8 hectáreas frente al mar, sin desarrollar desde 1987</h2>
+        <p data-es="El Plan Parcial del P-6 nunca llegó a ejecutarse. Hoy, el nuevo PGOU de Almuñécar lo recoge como sector SC2 con uso global turístico y una edificabilidad de 0,30 m²t/m²s. Es, sencillamente, el mayor suelo finalista frente a la playa de La Herradura." data-en="The P-6 Partial Plan was never executed. Today, Almuñécar's new General Plan classifies it as sector SC2 with global tourist use and a buildability ratio of 0.30 m²t/m²s. It is, quite simply, the largest development-ready seafront land in La Herradura.">El Plan Parcial del P-6 nunca llegó a ejecutarse. Hoy, el nuevo PGOU de Almuñécar lo recoge como sector SC2 con uso global turístico y una edificabilidad de 0,30 m²t/m²s.</p>
+        <ul>
+          <li data-es="Superficie: 178.048 m² (17,8 ha) de suelo urbanizable sectorizado" data-en="Surface: 178,048 m² (17.8 ha) of sectorised developable land">Superficie: 178.048 m² (17,8 ha) de suelo urbanizable sectorizado</li>
+          <li data-es="Uso global turístico · edificabilidad 0,30 → 53.415 m² de techo" data-en="Global tourist use · buildability 0.30 → 53,415 m² of floor area">Uso global turístico · edificabilidad 0,30 → 53.415 m² de techo</li>
+          <li data-es="Producto propuesto: 55% apart-hotel 5★ + 45% branded residences de lujo" data-en="Proposed product: 55% 5★ apart-hotel + 45% luxury branded residences">Producto propuesto: 55% apart-hotel 5★ + 45% branded residences de lujo</li>
+          <li data-es="Ubicación: primera línea, entre el Barranco de las Tejas y Peña Parda" data-en="Location: beachfront, between Barranco de las Tejas and Peña Parda">Ubicación: primera línea, entre el Barranco de las Tejas y Peña Parda</li>
+        </ul>
+      </div>
+      <div class="reveal"><img src="assets/R1_aerea_plan_construido.jpg" alt="Vista aérea del sector P-6 desarrollado sobre la bahía de La Herradura"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EL ENCLAVE -->
+<section id="masterplan" class="alt">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="El masterplan" data-en="The masterplan">El masterplan</div>
+    <h2 class="h-sec reveal" data-es="El sector, ordenado como un resort de baja densidad" data-en="The sector, planned as a low-density resort">El sector, ordenado como un resort de baja densidad</h2>
+    <p class="lead reveal" data-es="Ordenación indicativa de las 17,8 ha sobre la franja litoral real del sector P-6, paralela a la playa de La Herradura: colección de villas privadas, apart-hotel 5★, spa, beach club y un paseo peatonal verde frente al mar." data-en="Indicative masterplan of the 17.8 ha over the real coastal strip of Sector P-6, parallel to La Herradura beach: a private villa collection, a 5★ apart-hotel, spa, beach club and a green seafront promenade.">Ordenación indicativa de las 17,8 ha sobre la franja litoral real del sector P-6, paralela a la playa de La Herradura.</p>
+    <div class="reveal" style="margin-top:30px"><img src="assets/P1_plano_planta_texturas.jpg" alt="Plano en planta del masterplan con texturas" style="width:100%;border-radius:4px;box-shadow:0 30px 60px rgba(0,0,0,.4)"></div>
+    <div class="grid two reveal" style="margin-top:24px">
+      <img src="assets/R2_perspectiva_plan.jpg" alt="Perspectiva aérea del plan construido" style="width:100%;border-radius:4px;box-shadow:0 20px 40px rgba(0,0,0,.35)">
+      <img src="assets/P2_plano_usos.jpg" alt="Plano de usos del masterplan" style="width:100%;border-radius:4px;box-shadow:0 20px 40px rgba(0,0,0,.35)">
+    </div>
+    <p class="disc reveal" data-es="Ordenación volumétrica ilustrativa y no vinculante, sujeta al Plan Parcial y a la aprobación definitiva del planeamiento." data-en="Illustrative, non-binding massing subject to the Partial Plan and final planning approval.">Ordenación ilustrativa y no vinculante, sujeta al Plan Parcial y a la aprobación definitiva del planeamiento.</p>
+  </div>
+</section>
+
+<!-- EL ENCLAVE -->
+<section id="enclave">
+  <div class="wrap">
+    <div class="row rev">
+      <div class="reveal"><img src="assets/B6_piscina_infinita.jpg" alt="Piscina infinita frente a la bahía"></div>
+      <div class="reveal">
+        <div class="label eyebrow" data-es="El enclave" data-en="The enclave">El enclave</div>
+        <h2 class="h-sec" data-es="La Herradura: la joya discreta de la Costa Tropical" data-en="La Herradura: the discreet jewel of the Costa Tropical">La Herradura: la joya discreta de la Costa Tropical</h2>
+        <p data-es="Una bahía en forma de herradura protegida por dos cabos —Punta de la Mona y Cerro Gordo— donde la Sierra de la Almijara cae directamente al mar. Aguas cristalinas, microclima subtropical con 320 días de sol y una autenticidad mediterránea que ya no existe en la Costa del Sol. A 45 minutos del aeropuerto de Málaga y de Granada." data-en="A horseshoe-shaped bay sheltered by two headlands —Punta de la Mona and Cerro Gordo— where the Sierra de la Almijara drops straight into the sea. Crystal-clear waters, a subtropical microclimate with 320 days of sun and a Mediterranean authenticity that no longer exists on the Costa del Sol. 45 minutes from both Málaga and Granada airports.">Una bahía en forma de herradura protegida por dos cabos donde la Sierra de la Almijara cae directamente al mar. Aguas cristalinas, microclima subtropical con 320 días de sol, a 45 minutos de Málaga y Granada.</p>
+        <ul>
+          <li data-es="Microclima subtropical · 320 días de sol al año" data-en="Subtropical microclimate · 320 days of sun a year">Microclima subtropical · 320 días de sol al año</li>
+          <li data-es="A 45 min de dos aeropuertos internacionales (Málaga y Granada)" data-en="45 min from two international airports (Málaga & Granada)">A 45 min de dos aeropuertos internacionales</li>
+          <li data-es="Reserva marina de Cerro Gordo–Maro · buceo de primer nivel" data-en="Cerro Gordo–Maro marine reserve · world-class diving">Reserva marina de Cerro Gordo–Maro · buceo de primer nivel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="hair"></div>
+
+<!-- HOTEL 5 ESTRELLAS -->
+<section id="hotel" class="alt">
+  <div class="wrap">
+    <div class="row">
+      <div class="reveal">
+        <span class="badge" data-es="El catalizador" data-en="The catalyst">El catalizador</span>
+        <h2 class="h-sec" style="margin-top:18px" data-es="El primer 5 estrellas de la Costa Tropical, ya en obras" data-en="The Costa Tropical's first 5-star hotel, already under construction">El primer 5 estrellas de la Costa Tropical, ya en obras</h2>
+        <p data-es="A menos de 1 km del sector, en primera línea del Paseo Andrés Segovia, se levanta el DAIA Slow Beach Hotel: el primer hotel de 5 estrellas de toda la Costa Tropical, un adults-only de bienestar 'slow beach' promovido por el Grupo Fuerte. Su primera piedra se colocó en junio de 2026 y abrirá hacia 2028. No es una promesa: es la prueba tangible de que el mercado y la administración reposicionan La Herradura hacia el segmento premium." data-en="Less than 1 km from the sector, on the beachfront of Paseo Andrés Segovia, rises the DAIA Slow Beach Hotel: the first 5-star hotel on the entire Costa Tropical, an adults-only 'slow beach' wellness resort developed by Grupo Fuerte. Its foundation stone was laid in June 2026 and it opens around 2028. Not a promise: tangible proof that the market and the administration are repositioning La Herradura into the premium segment.">A menos de 1 km del sector, en primera línea del Paseo Andrés Segovia, se levanta el DAIA Slow Beach Hotel: el primer 5 estrellas de la Costa Tropical, un adults-only 'slow beach' del Grupo Fuerte. Primera piedra en junio de 2026, apertura hacia 2028.</p>
+        <div class="grid three" style="margin-top:30px">
+          <div class="stat"><div class="n">220</div><div class="t" data-es="habitaciones 5★" data-en="5★ rooms">habitaciones 5★</div></div>
+          <div class="stat"><div class="n">14,7 M€</div><div class="t" data-es="inversión hotelera" data-en="hotel investment">inversión hotelera</div></div>
+          <div class="stat"><div class="n">2028</div><div class="t" data-es="apertura prevista" data-en="expected opening">apertura prevista</div></div>
+        </div>
+      </div>
+      <div class="reveal"><img src="assets/hotel_daia.jpg" alt="Render del DAIA Slow Beach Hotel, primer 5★ de la Costa Tropical"><div style="font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin-top:10px;text-align:center" data-es="Render oficial · DAIA Slow Beach Hotel (Grupo Fuerte)" data-en="Official render · DAIA Slow Beach Hotel (Grupo Fuerte)">Render oficial · DAIA Slow Beach Hotel (Grupo Fuerte)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MERCADO -->
+<section id="mercado">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="El mercado" data-en="The market">El mercado</div>
+    <h2 class="h-sec reveal" data-es="Precios al alza y un descuento del 24% frente a Marbella" data-en="Rising prices and a 24% discount to Marbella">Precios al alza y un descuento del 24% frente a Marbella</h2>
+    <p class="lead reveal" data-es="La Herradura cotiza hoy entre 3.318 y 3.562 €/m², con subidas del 13–20% interanual. El producto de lujo en primera línea aún no existe en la zona: cuando exista, el recorrido de precio es real." data-en="La Herradura trades today between €3,318 and €3,562/m², rising 13–20% year-on-year. First-line luxury product does not yet exist here: when it does, the price upside is real.">La Herradura cotiza hoy entre 3.318 y 3.562 €/m², con subidas del 13–20% interanual. El producto de lujo en primera línea aún no existe en la zona.</p>
+    <div class="grid four reveal" style="margin-top:48px">
+      <div class="stat"><div class="n">+13–20%</div><div class="t" data-es="subida interanual" data-en="year-on-year growth">subida interanual</div></div>
+      <div class="stat"><div class="n">4.500–6.500</div><div class="t" data-es="€/m² producto lujo 1ª línea" data-en="€/m² first-line luxury">€/m² producto lujo 1ª línea</div></div>
+      <div class="stat"><div class="n">−24%</div><div class="t" data-es="gap de precio vs Marbella" data-en="price gap vs Marbella">gap de precio vs Marbella</div></div>
+      <div class="stat"><div class="n">320</div><div class="t" data-es="días de sol / año" data-en="days of sun / year">días de sol / año</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA / VISION -->
+<section class="alt" id="vision">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="La visión" data-en="The vision">La visión</div>
+    <h2 class="h-sec reveal" data-es="Un resort residencial de lujo, integrado en el paisaje" data-en="A luxury residential resort, woven into the landscape">Un resort residencial de lujo, integrado en el paisaje</h2>
+  </div>
+  <div class="wrap">
+    <div class="gal reveal" style="margin-top:36px">
+      <figure class="big"><img src="assets/B2_villa_primera_linea.jpg" alt="Villa de lujo en primera línea"><figcaption data-es="Villas frente al mar" data-en="Seafront villas">Villas frente al mar</figcaption></figure>
+      <figure class="med"><img src="assets/B3_atico_infinity.jpg" alt="Ático con infinity pool"><figcaption data-es="Áticos con infinity pool" data-en="Penthouses with infinity pool">Áticos con infinity pool</figcaption></figure>
+      <figure class="med"><img src="assets/B4_calle_peatonal.jpg" alt="Calle peatonal premium"><figcaption data-es="Paseo peatonal premium" data-en="Premium pedestrian promenade">Paseo peatonal premium</figcaption></figure>
+      <figure class="sm"><img src="assets/B8_axonometria_masterplan.jpg" alt="Axonometría del masterplan"><figcaption data-es="Masterplan" data-en="Masterplan">Masterplan</figcaption></figure>
+      <figure class="sm"><img src="assets/B6_piscina_infinita.jpg" alt="Piscina infinita"><figcaption data-es="Beach club & spa" data-en="Beach club & spa">Beach club & spa</figcaption></figure>
+      <figure class="sm"><img src="assets/B5_lobby_beach_club.jpg" alt="Lobby"><figcaption data-es="Lobby & lifestyle" data-en="Lobby & lifestyle">Lobby & lifestyle</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- NUMEROS -->
+<section id="numeros">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="Las cifras" data-en="The figures">Las cifras</div>
+    <h2 class="h-sec reveal" data-es="Del suelo a la plusvalía" data-en="From land to capital gain">Del suelo a la plusvalía</h2>
+    <p class="lead reveal" data-es="Modelo de tres escenarios sobre el desarrollo del sector. El fondo puede optar por una estrategia de value-add urbanístico (comprar, obtener el planeamiento firme y revender con plusvalía) o por el desarrollo completo a 10–12 años." data-en="Three-scenario model on the sector's development. The fund may pursue a planning value-add strategy (buy, secure firm planning and resell at a gain) or full development over 10–12 years.">Modelo de tres escenarios sobre el desarrollo del sector.</p>
+    <table class="tbl reveal">
+      <thead><tr>
+        <th data-es="Concepto" data-en="Item">Concepto</th>
+        <th data-es="Conservador" data-en="Conservative">Conservador</th>
+        <th data-es="Base" data-en="Base">Base</th>
+        <th data-es="Optimista" data-en="Optimistic">Optimista</th>
+      </tr></thead>
+      <tbody>
+        <tr><td data-es="Precio de oferta del suelo (€/m²)" data-en="Land offer price (€/m²)">Precio de oferta del suelo (€/m²)</td><td class="num">500</td><td class="num">600</td><td class="num">700</td></tr>
+        <tr><td data-es="Valor total de la operación (suelo)" data-en="Total land transaction value">Valor total de la operación</td><td class="num">89 M€</td><td class="num">107 M€</td><td class="num">125 M€</td></tr>
+        <tr><td data-es="Venta del producto a la entrega (€/m²t)" data-en="Sale price at delivery (€/m²)">Venta a la entrega (€/m²t)</td><td class="num">7.000</td><td class="num">7.500</td><td class="num">8.000</td></tr>
+        <tr><td data-es="GDV · valor bruto de ventas" data-en="GDV · gross development value">GDV · valor de ventas</td><td class="num">374 M€</td><td class="num">401 M€</td><td class="num">427 M€</td></tr>
+        <tr><td data-es="Margen del fondo sobre ventas" data-en="Fund margin on sales">Margen sobre ventas</td><td class="num">~16%</td><td class="num">~17%</td><td class="num">~18%</td></tr>
+        <tr><td data-es="TIR estimada del fondo (apalancada)" data-en="Estimated fund IRR (levered)">TIR estimada del fondo</td><td class="num">~16%</td><td class="num">~19%</td><td class="num">~22%</td></tr>
+      </tbody>
+    </table>
+    <p class="disc reveal" data-es="* El precio de venta se expresa a valores de entrega (horizonte 2033–2035), reflejando la apreciación del mercado desde el nivel de lujo actual (~5.000–5.500 €/m²). Cifras orientativas basadas en parámetros urbanísticos oficiales del sector y en comparables de mercado; sujetas a due diligence y a la aprobación definitiva del planeamiento. No constituyen oferta ni recomendación de inversión." data-en="* Sale prices are stated at delivery values (2033–2035 horizon), reflecting market appreciation from today's luxury level (~€5,000–5,500/m²). Indicative figures based on the sector's official planning parameters and market comparables; subject to due diligence and final planning approval. Not an offer nor investment advice.">* El precio de venta se expresa a valores de entrega (horizonte 2033–2035), reflejando la apreciación desde el nivel de lujo actual (~5.000–5.500 €/m²). Cifras orientativas sujetas a due diligence y a la aprobación definitiva del planeamiento.</p>
+  </div>
+</section>
+<div class="hair"></div>
+
+<!-- HOJA DE RUTA -->
+<section id="ruta" class="alt">
+  <div class="wrap">
+    <div class="label eyebrow reveal" data-es="Costes & cronograma" data-en="Costs & timeline">Costes & cronograma</div>
+    <h2 class="h-sec reveal" data-es="Los deberes hechos: costes analizados y plazos realistas" data-en="Homework done: analysed costs and a realistic timeline">Los deberes hechos: costes analizados y plazos realistas</h2>
+    <p class="lead reveal" data-es="Costes calculados sobre las ordenanzas fiscales de Almuñécar (ICIO 3,2%), los módulos del COAG Granada y la Ley LISTA. Un desarrollo por fases con el riesgo acotado." data-en="Costs computed from Almuñécar's fiscal ordinances (ICIO 3.2%), COAG Granada modules and the LISTA law. A phased development with bounded risk.">Costes calculados sobre las ordenanzas fiscales de Almuñécar (ICIO 3,2%), los módulos del COAG Granada y la Ley LISTA.</p>
+
+    <table class="tbl reveal" style="margin-bottom:44px">
+      <thead><tr><th data-es="Partida de coste de desarrollo" data-en="Development cost item">Partida</th><th data-es="Referencia" data-en="Reference">Referencia</th><th>Aprox.</th></tr></thead>
+      <tbody>
+        <tr><td data-es="Construcción (contrata, calidad alta)" data-en="Construction (contract, high quality)">Construcción (PEC)</td><td>PEM ×1,19</td><td class="num">~102 M€</td></tr>
+        <tr><td data-es="Urbanización + gestión" data-en="Urbanisation + management">Urbanización + gestión</td><td>~100 €/m²s</td><td class="num">~20 M€</td></tr>
+        <tr><td data-es="Impuestos y tasas municipales" data-en="Municipal taxes & fees">Impuestos y tasas (Almuñécar)</td><td>ICIO 3,2% + licencias</td><td class="num">~6 M€</td></tr>
+        <tr><td data-es="Honorarios técnicos + seguros + financiación" data-en="Professional fees + insurance + financing">Honorarios + seguros + financiación</td><td>6–10% PEM</td><td class="num">~14 M€</td></tr>
+        <tr><td data-es="Comercialización + gastos generales" data-en="Sales & marketing + overheads">Comercialización + generales</td><td>~9% ventas</td><td class="num">~23 M€</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tl reveal">
+      <div class="it"><div class="yr" data-es="Año 0 · Compra" data-en="Year 0 · Acquisition">Año 0 · Compra</div><div class="d" data-es="Opción de compra condicionada a la aprobación del planeamiento: capital en riesgo mínimo hasta tener seguridad jurídica." data-en="Purchase option conditional on planning approval: minimal capital at risk until legal certainty.">Opción de compra condicionada a la aprobación del planeamiento: capital en riesgo mínimo.</div></div>
+      <div class="it"><div class="yr" data-es="Año 1–2" data-en="Year 1–2">Año 1–2</div><div class="d" data-es="Aprobación definitiva del PGOU + arranque del Plan Parcial. Apertura del hotel 5★ DAIA (~2028)." data-en="Final PGOU approval + start of the Partial Plan. DAIA 5★ hotel opening (~2028).">Aprobación definitiva del PGOU + arranque del Plan Parcial. Apertura del hotel 5★ DAIA (~2028).</div></div>
+      <div class="it"><div class="yr" data-es="Año 2–4" data-en="Year 2–4">Año 2–4</div><div class="d" data-es="Plan Parcial, Proyecto de Urbanización y Reparcelación aprobados." data-en="Partial Plan, Urbanisation Project and Reparcelling approved.">Plan Parcial, Proyecto de Urbanización y Reparcelación aprobados.</div></div>
+      <div class="it"><div class="yr" data-es="Año 4–7" data-en="Year 4–7">Año 4–7</div><div class="d" data-es="Obras de urbanización por fases + primeras licencias de edificación." data-en="Urbanisation works in phases + first building permits.">Obras de urbanización por fases + primeras licencias de edificación.</div></div>
+      <div class="it"><div class="yr" data-es="Año 6–10" data-en="Year 6–10">Año 6–10</div><div class="d" data-es="Construcción por fases + preventa sobre plano." data-en="Phased construction + off-plan pre-sales.">Construcción por fases + preventa sobre plano.</div></div>
+      <div class="it"><div class="yr" data-es="Año 8–12" data-en="Year 8–12">Año 8–12</div><div class="d" data-es="Entregas y venta de las últimas unidades. Escenario optimista: 7–8 años." data-en="Handovers and sale of the final units. Optimistic scenario: 7–8 years.">Entregas y venta de las últimas unidades. Escenario optimista: 7–8 años.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALLOUT -->
+<section>
+  <div class="wrap">
+    <div class="callout reveal">
+      <div class="label" data-es="La operación" data-en="The transaction">La operación</div>
+      <p class="q" style="margin-top:16px" data-es="&laquo;Un suelo que solo aparece una vez por generación, en el momento exacto en que su destino cambia de categoría.&raquo;" data-en="&laquo;Land that appears only once a generation, at the precise moment its destination changes league.&raquo;">«Un suelo que solo aparece una vez por generación, en el momento exacto en que su destino cambia de categoría.»</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact">
+  <div class="wrap">
+    <div class="card reveal">
+      <div class="label" data-es="Proceso confidencial" data-en="Confidential process">Proceso confidencial</div>
+      <h2 class="h-sec" style="margin:16px 0" data-es="Solicite el dossier completo" data-en="Request the full dossier">Solicite el dossier completo</h2>
+      <p style="max-width:620px;margin:0 auto 26px" data-es="Operación gestionada en exclusiva por GRXDAMA Asociados. El acceso a la documentación técnica, urbanística y económica se realiza bajo acuerdo de confidencialidad." data-en="Transaction managed on an exclusive basis by GRXDAMA Asociados. Access to the technical, planning and financial documentation is granted under a confidentiality agreement.">Operación gestionada en exclusiva por GRXDAMA Asociados. El acceso a la documentación se realiza bajo acuerdo de confidencialidad.</p>
+      <div>
+        <a class="btn" href="mailto:contacto@viflip-granada.com?subject=Bah%C3%ADa%20Secreta%20-%20Solicitud%20de%20dossier">contacto@viflip-granada.com</a>
+        <a class="btn solid" href="tel:+34685107943">+34 685 107 943</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div style="font-family:var(--serif);font-size:1.3rem;letter-spacing:.1em;color:var(--cal)">Bahía Secreta</div>
+      <div style="font-size:.7rem;letter-spacing:.3em;color:var(--brass);margin-top:4px">LA HERRADURA · COSTA TROPICAL</div>
+    </div>
+    <div class="viflip">
+      <span data-es="Intermediación exclusiva" data-en="Exclusive intermediation">Intermediación exclusiva</span>
+      <strong style="color:var(--cal)">viflip · GRXDAMA Asociados SLU</strong>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="disc" data-es="Documento comercial de carácter orientativo. La información urbanística procede de fuentes oficiales (PGOU de Almuñécar, aprobación provisional 2023) y está sujeta a la aprobación definitiva del planeamiento. Las cifras económicas son estimaciones sujetas a due diligence y no constituyen oferta vinculante ni recomendación de inversión. Imágenes de carácter ilustrativo generadas digitalmente. © 2026 GRXDAMA Asociados SLU — CIF B-13859566, Granada." data-en="Commercial document of an indicative nature. Planning information comes from official sources (Almuñécar General Plan, 2023 provisional approval) and is subject to final planning approval. Economic figures are estimates subject to due diligence and do not constitute a binding offer nor investment advice. Illustrative, digitally generated imagery. © 2026 GRXDAMA Asociados SLU — Tax ID B-13859566, Granada.">Documento comercial orientativo. Información urbanística de fuentes oficiales (PGOU de Almuñécar) sujeta a aprobación definitiva. Cifras económicas estimadas, sujetas a due diligence; no constituyen oferta vinculante ni recomendación de inversión. Imágenes ilustrativas generadas digitalmente. © 2026 GRXDAMA Asociados SLU — CIF B-13859566, Granada.</p>
+  </div>
+</footer>
+
+<script>
+let lang='es';
+function toggleLang(){
+  lang = lang==='es' ? 'en' : 'es';
+  document.documentElement.lang = lang;
+  document.getElementById('lang').textContent = lang==='es' ? 'EN' : 'ES';
+  document.querySelectorAll('[data-es]').forEach(el=>{
+    const v = el.getAttribute('data-'+lang);
+    if(v!==null) el.textContent = v;
+  });
+}
+// idioma por URL (?lang=en) para el PDF en inglés
+if(new URLSearchParams(location.search).get('lang')==='en'){ toggleLang(); }
+// nav solid on scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('solid',scrollY>60)});
+// reveal on scroll
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

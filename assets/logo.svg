@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430" role="img" aria-label="Bahía Secreta — La Herradura">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8C888"/><stop offset="0.5" stop-color="#C39A5B"/><stop offset="1" stop-color="#A9823F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(230,6)">
+    <g fill="none" stroke="url(#brass)" stroke-width="8" stroke-linecap="round">
+      <path d="M126,84 C90,120 90,196 126,232"/>
+      <path d="M174,84 C210,120 210,196 174,232"/>
+      <line x1="112" y1="172" x2="188" y2="172"/>
+      <line x1="126" y1="188" x2="174" y2="188"/>
+    </g>
+    <circle cx="150" cy="150" r="34" fill="url(#brass)"/>
+  </g>
+  <text x="380" y="318" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="54" letter-spacing="5" fill="#F6F3EC">BAHÍA SECRETA</text>
+  <text x="380" y="354" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="15" letter-spacing="7" fill="#C39A5B">LA HERRADURA · COSTA TROPICAL</text>
+</svg>
