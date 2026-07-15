@@ -79,7 +79,11 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
 .two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.four{grid-template-columns:repeat(4,1fr)}
 @media(max-width:900px){.two,.three,.four{grid-template-columns:1fr}}
 .alt{background:var(--blue-2)}
-.hair{height:1px;background:linear-gradient(90deg,transparent,rgba(195,154,91,.5),transparent);margin:0 auto;max-width:1200px}
+.hair{height:1px;background:linear-gradient(90deg,transparent,rgba(195,154,91,.5),transparent);margin:0 auto;max-width:1200px;position:relative}
+.hair::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:30px;height:30px;
+  background:url('assets/emblem_bs1.png') center/contain no-repeat;opacity:.9}
+.hero-emblem{height:clamp(84px,10vw,132px);margin-bottom:22px;display:block;filter:drop-shadow(0 4px 18px rgba(0,0,0,.35))}
+.emblem-block{height:64px;display:block;margin:0 auto 18px}
 
 /* STАТ CARDS */
 .stat{border:1px solid rgba(195,154,91,.3);padding:30px 26px;background:rgba(255,255,255,.02);border-radius:3px}
@@ -143,6 +147,13 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
   section{padding:10mm 0 6mm!important;break-before:page;page-break-before:always}
   section#contacto{break-before:auto;page-break-before:auto} /* la cita de La Operacion + contacto comparten pagina */
   .hair{display:none!important}
+  /* emblema de marca arriba a la derecha en cada pagina del dossier */
+  section>.wrap:first-of-type{position:relative}
+  section>.wrap:first-of-type::before{content:'';position:absolute;top:-4mm;right:0;width:13mm;height:13mm;
+    background:url('assets/emblem_bs1.png') center/contain no-repeat;opacity:.9}
+  section#contacto>.wrap:first-of-type::before{display:none}
+  .emblem-block{height:46px!important;max-height:none!important}
+  section img.emblem-block{width:auto!important}
   /* compactar urbanismo para que quepa en una sola pagina */
   #urbanismo{padding-top:6mm!important}
   #urbanismo .h-sec{font-size:18pt}
@@ -224,6 +235,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <source src="assets/video_bahia.mp4" type="video/mp4">
   </video>
   <div class="wrap">
+    <img class="hero-emblem" src="assets/emblem_bs1.png" alt="Emblema Bahía Secreta">
     <div class="label" data-es="Oportunidad de inversión · Costa Tropical, España" data-en="Investment opportunity · Costa Tropical, Spain">Oportunidad de inversión · Costa Tropical, España</div>
     <h1>Bahía Secreta</h1>
     <div class="sub" data-es="El último gran suelo frente al mar de La Herradura" data-en="The last great seafront land in La Herradura">El último gran suelo frente al mar de La Herradura</div>
@@ -459,6 +471,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <section>
   <div class="wrap">
     <div class="callout reveal">
+      <img class="emblem-block" src="assets/emblem_bs1.png" alt="">
       <div class="label" data-es="La operación" data-en="The transaction">La operación</div>
       <p class="q" style="margin-top:16px" data-es="&laquo;Un suelo que solo aparece una vez por generación, en el momento exacto en que su destino cambia de categoría.&raquo;" data-en="&laquo;Land that appears only once a generation, at the precise moment its destination changes league.&raquo;">«Un suelo que solo aparece una vez por generación, en el momento exacto en que su destino cambia de categoría.»</p>
     </div>
@@ -469,11 +482,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <section id="contacto" class="contact">
   <div class="wrap">
     <div class="card reveal">
+      <img class="emblem-block" src="assets/emblem_bs1.png" alt="" style="height:72px">
       <div class="label" data-es="Proceso confidencial" data-en="Confidential process">Proceso confidencial</div>
-      <h2 class="h-sec" style="margin:16px 0" data-es="Solicite el dossier completo" data-en="Request the full dossier">Solicite el dossier completo</h2>
-      <p style="max-width:620px;margin:0 auto 26px" data-es="Operación gestionada en exclusiva por GRXDAMA Asociados. El acceso a la documentación técnica, urbanística y económica se realiza bajo acuerdo de confidencialidad." data-en="Transaction managed on an exclusive basis by GRXDAMA Asociados. Access to the technical, planning and financial documentation is granted under a confidentiality agreement.">Operación gestionada en exclusiva por GRXDAMA Asociados. El acceso a la documentación se realiza bajo acuerdo de confidencialidad.</p>
+      <h2 class="h-sec" style="margin:16px 0" data-es="¿Le interesa la operación?" data-en="Interested in the opportunity?">¿Le interesa la operación?</h2>
+      <p style="max-width:620px;margin:0 auto 26px" data-es="Para más información o interés en la operación, contacte con nosotros." data-en="For further information or interest in the opportunity, please contact us.">Para más información o interés en la operación, contacte con nosotros.</p>
       <div>
-        <a class="btn" href="mailto:contacto@viflip-granada.com?subject=Bah%C3%ADa%20Secreta%20-%20Solicitud%20de%20dossier">contacto@viflip-granada.com</a>
+        <a class="btn" href="mailto:contacto@viflip-granada.com?subject=Bah%C3%ADa%20Secreta%20-%20Inter%C3%A9s%20en%20la%20operaci%C3%B3n">contacto@viflip-granada.com</a>
         <a class="btn solid" href="tel:+34685107943">+34 685 107 943</a>
       </div>
     </div>
@@ -482,9 +496,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 
 <footer>
   <div class="wrap">
-    <div>
-      <div style="font-family:var(--serif);font-size:1.3rem;letter-spacing:.1em;color:var(--cal)">Bahía Secreta</div>
-      <div style="font-size:.7rem;letter-spacing:.3em;color:var(--brass);margin-top:4px">LA HERRADURA · COSTA TROPICAL</div>
+    <div style="display:flex;align-items:center;gap:16px">
+      <img src="assets/emblem_bs1.png" alt="" style="height:52px">
+      <div>
+        <div style="font-family:var(--serif);font-size:1.3rem;letter-spacing:.1em;color:var(--cal)">Bahía Secreta</div>
+        <div style="font-size:.7rem;letter-spacing:.3em;color:var(--brass);margin-top:4px">LA HERRADURA · COSTA TROPICAL</div>
+      </div>
     </div>
     <div class="viflip">
       <span data-es="Intermediación exclusiva" data-en="Exclusive intermediation">Intermediación exclusiva</span>
