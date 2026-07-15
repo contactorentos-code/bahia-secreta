@@ -139,7 +139,28 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
   .print-cover .pc-t{font-family:var(--serif);font-size:46pt;color:var(--cal);line-height:1}
   .print-cover .pc-s{font-family:var(--serif);font-style:italic;font-size:16pt;color:var(--sand);margin-top:8px}
   .print-cover .pc-k{margin-top:34px;font-size:9pt;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
-  section{padding:12mm 0!important}
+  /* cada seccion abre pagina nueva y ocupa su(s) pagina(s) completa(s) */
+  section{padding:10mm 0 6mm!important;break-before:page;page-break-before:always}
+  section#contacto{break-before:auto;page-break-before:auto} /* la cita de La Operacion + contacto comparten pagina */
+  .hair{display:none!important}
+  /* compactar urbanismo para que quepa en una sola pagina */
+  #urbanismo{padding-top:6mm!important}
+  #urbanismo .h-sec{font-size:18pt}
+  #urbanismo .disc{margin-top:3mm!important;font-size:.6rem;line-height:1.35}
+  #urbanismo [style*="margin-top"]{margin-top:5mm!important}
+  #urbanismo .donut{width:37mm;height:37mm}
+  #urbanismo .ubar .track{height:9px}
+  #urbanismo .legend div{font-size:.75rem}
+  #urbanismo .grid.two{gap:8mm!important}
+  #urbanismo .donut{width:40mm;height:40mm;margin-bottom:10px}
+  #urbanismo .dcard h3{margin-bottom:10px}
+  #urbanismo .legend{gap:5px}
+  #urbanismo .legend div{font-size:.8rem}
+  #urbanismo .ubar{margin:8px 0}
+  #urbanismo .lead{margin-bottom:0}
+  .stat{padding:14px 16px}
+  .stat .n{font-size:2rem}
+  .stat .t{margin-top:6px;font-size:.72rem}
   /* romper entre bloques, nunca por dentro de uno */
   .stat,.dcard,.ubar,.legend,.gal figure,.grid,.tbl,.card,.row>div,img{break-inside:avoid!important;page-break-inside:avoid!important}
   .h-sec,h3,.label{break-after:avoid;page-break-after:avoid}
@@ -281,7 +302,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <div class="stat"><div class="n">0,30</div><div class="t" data-es="m²t/m²s · edificabilidad bruta" data-en="FAR · gross buildability">m²t/m²s · edificabilidad</div></div>
       <div class="stat"><div class="n">53.415</div><div class="t" data-es="m²t de techo edificable" data-en="m² of buildable floor area">m²t de techo edificable</div></div>
       <div class="stat"><div class="n">≤267</div><div class="t" data-es="viviendas máx. · 15 viv/ha" data-en="max. dwellings · 15/ha">viviendas máx. · 15 viv/ha</div></div>
-      <div class="stat"><div class="n" style="font-size:2.2rem">3 plantas</div><div class="t" data-es="altura máx. · 10 m (ref. MP-98)" data-en="max. height · 10 m (MP-98 ref.)">altura máx. · 10 m</div></div>
+      <div class="stat"><div class="n" style="font-size:2.2rem" data-es="3 plantas" data-en="3 storeys">3 plantas</div><div class="t" data-es="altura máx. · 10 m (ref. MP-98)" data-en="max. height · 10 m (MP-98 ref.)">altura máx. · 10 m</div></div>
     </div>
 
     <div class="grid two reveal" style="margin-top:60px;gap:50px">
