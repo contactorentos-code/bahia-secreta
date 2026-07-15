@@ -139,11 +139,22 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
   .print-cover .pc-t{font-family:var(--serif);font-size:46pt;color:var(--cal);line-height:1}
   .print-cover .pc-s{font-family:var(--serif);font-style:italic;font-size:16pt;color:var(--sand);margin-top:8px}
   .print-cover .pc-k{margin-top:34px;font-size:9pt;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
-  section{padding:16mm 0!important;page-break-inside:avoid}
+  section{padding:12mm 0!important}
+  /* romper entre bloques, nunca por dentro de uno */
+  .stat,.dcard,.ubar,.legend,.gal figure,.grid,.tbl,.card,.row>div,img{break-inside:avoid!important;page-break-inside:avoid!important}
+  .h-sec,h3,.label{break-after:avoid;page-break-after:avoid}
   body{font-size:10.5pt}
   .h-sec{font-size:22pt}.lead{font-size:11pt}
-  .row img,.gal img,.stat{box-shadow:none!important}
-  .gal{grid-template-columns:repeat(6,1fr)}
+  img,.stat{box-shadow:none!important}
+  /* imagenes mas contenidas para que quepan en el hueco de pagina */
+  section img{max-height:95mm;width:100%;object-fit:cover}
+  /* galeria en PDF: 2 fotos por fila a todo el ancho */
+  .gal{grid-template-columns:1fr 1fr;gap:5mm}
+  .gal .big,.gal .med,.gal .sm{grid-column:span 1;grid-row:auto}
+  .gal figure{height:62mm}
+  /* rejillas compactas en PDF (evita paginas medio vacias) */
+  .grid.four,.grid.two{grid-template-columns:1fr 1fr!important}
+  .row,.row.rev{grid-template-columns:1fr 1fr!important;gap:8mm!important}
 }
 
 /* CONTACT */
