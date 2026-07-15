@@ -60,7 +60,16 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
 .hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.6vw,1.9rem);color:var(--sand);margin-top:8px}
 .hero .meta{margin-top:26px;display:flex;gap:34px;flex-wrap:wrap;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cal)}
 .hero .meta span{border-left:2px solid var(--brass);padding-left:12px}
-.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.65rem;letter-spacing:.3em;color:var(--brass);opacity:.8}
+.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.65rem;letter-spacing:.3em;color:var(--brass);opacity:.8;z-index:2}
+/* VIDEO */
+.hero{position:relative;overflow:hidden}
+.herovid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,59,74,.15),rgba(12,59,74,.75));z-index:1}
+.hero .wrap{position:relative;z-index:2}
+.vidfeature{position:relative;margin-top:18px;overflow:hidden;border-radius:2px}
+.vidfeature video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#08222c}
+.vidfeature figcaption{position:absolute;left:0;bottom:0;right:0;padding:16px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cal);background:linear-gradient(0deg,rgba(12,59,74,.85),transparent)}
+@media (prefers-reduced-motion:reduce){.herovid{display:none}}
 
 /* GENERIC */
 .eyebrow{margin-bottom:18px}
@@ -121,7 +130,7 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
   @page{size:A4;margin:0}
   html,body{background:var(--blue)}
-  nav,.scrollcue{display:none!important}
+  nav,.scrollcue,video,.vidfeature{display:none!important}
   .reveal{opacity:1!important;transform:none!important}
   .hero{display:none!important}
   .print-cover{display:flex!important;flex-direction:column;align-items:center;justify-content:center;height:297mm;
@@ -179,6 +188,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 </nav>
 
 <header class="hero" id="top">
+  <video class="herovid" autoplay muted loop playsinline preload="auto" poster="assets/B7_hero_bahia_atardecer.jpg" aria-hidden="true">
+    <source src="assets/video_bahia.mp4" type="video/mp4">
+  </video>
   <div class="wrap">
     <div class="label" data-es="Oportunidad de inversión · Costa Tropical, España" data-en="Investment opportunity · Costa Tropical, Spain">Oportunidad de inversión · Costa Tropical, España</div>
     <h1>Bahía Secreta</h1>
@@ -199,11 +211,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <h2 class="h-sec reveal" data-es="Una pieza irrepetible en la costa que viene" data-en="An irreplaceable piece on the coast of the future">Una pieza irrepetible en la costa que viene</h2>
     <p class="lead reveal" data-es="Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,8 hectáreas de suelo urbanizable de uso turístico en primera línea de una de las bahías más bellas del Mediterráneo español. Un enclave protegido por las montañas de la Almijara, a las puertas de un nuevo ciclo premium impulsado por el primer hotel de 5 estrellas de la Costa Tropical." data-en="Bahía Secreta is the development brand for Sector P-6 (SC2) in La Herradura, Almuñécar: 17.8 hectares of tourist-use developable land on the first line of one of the most beautiful bays of the Spanish Mediterranean. A cove sheltered by the Almijara mountains, on the verge of a new premium cycle driven by the first 5-star hotel on the Costa Tropical.">Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,8 hectáreas de suelo urbanizable de uso turístico en primera línea de una de las bahías más bellas del Mediterráneo español.</p>
     <div class="grid four" style="margin-top:52px">
-      <div class="stat reveal"><div class="n">17,8 ha</div><div class="t" data-es="Superficie del sector" data-en="Sector surface">Superficie del sector</div></div>
+      <div class="stat reveal"><div class="n">17,8 ha</div><div class="t" data-es="Superficie del sector · 178.048,49 m²s (PGOU)" data-en="Sector surface · 178,048.49 m² (PGOU)">Superficie del sector · 178.048,49 m²s (PGOU)</div></div>
       <div class="stat reveal"><div class="n">53.415</div><div class="t" data-es="m² de techo edificable" data-en="m² of buildable floor">m² de techo edificable</div></div>
       <div class="stat reveal"><div class="n">500–700</div><div class="t" data-es="€/m² · precio de oferta del suelo" data-en="€/m² · land offer price">€/m² · precio del suelo</div></div>
       <div class="stat reveal"><div class="n" style="font-size:2rem">5★ DAIA</div><div class="t" data-es="hotel catalizador a &lt;1 km" data-en="catalyst hotel &lt;1 km away">hotel catalizador a &lt;1 km</div></div>
     </div>
+    <p class="reveal" style="font-size:.72rem;color:rgba(246,243,236,.45);line-height:1.6;margin-top:18px;max-width:760px" data-es="Fuente oficial: Avance del PGOU de Almuñécar — Documento de Propuesta, cap. XI «Aspectos Cuantitativos», cuadro «Ámbitos de Suelo Urbanizable»: sector SC2 La Herradura — 178.048,49 m² de suelo (17,80 ha), uso global turístico, edificabilidad 0,30 m²t/m²s → 53.414,55 m²t." data-en="Official source: Almuñécar Draft General Plan (PGOU) — Proposal Document, ch. XI 'Quantitative Aspects', 'Developable Land' table: sector SC2 La Herradura — 178,048.49 m² of land (17.80 ha), global tourist use, buildability 0.30 m²/m² → 53,414.55 m² of floor area.">Fuente oficial: Avance del PGOU de Almuñécar — Documento de Propuesta, cap. XI «Aspectos Cuantitativos», cuadro «Ámbitos de Suelo Urbanizable»: sector SC2 La Herradura — 178.048,49 m² de suelo (17,80 ha), uso global turístico, edificabilidad 0,30 m²t/m²s → 53.414,55 m²t.</p>
   </div>
 </section>
 <div class="hair"></div>
@@ -384,6 +397,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <figure class="sm"><img src="assets/INT1_interior.jpg" alt="Interior de lujo con vistas a las zonas comunes y el mar desde una 5ª planta"><figcaption data-es="Salón con vistas · zonas comunes y mar" data-en="Living room · amenities & sea view">Salón con vistas · zonas comunes y mar</figcaption></figure>
     </div>
   </div>
+  <div class="wrap">
+    <figure class="vidfeature reveal">
+      <video src="assets/video_urbanizacion.mp4" muted loop playsinline preload="metadata" poster="assets/C1_zona_comun.jpg" aria-label="Recorrido en vídeo por las zonas comunes de la urbanización al atardecer"></video>
+      <figcaption data-es="Un paseo al atardecer por Bahía Secreta · recreación" data-en="A sunset stroll through Bahía Secreta · artist's impression">Un paseo al atardecer por Bahía Secreta · recreación</figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- NUMEROS -->
@@ -464,6 +483,13 @@ addEventListener('scroll',()=>{nav.classList.toggle('solid',scrollY>60)});
 // reveal on scroll
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// videos: reproducir solo cuando estan en pantalla (ahorra bateria/datos)
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const vio=new IntersectionObserver((es)=>es.forEach(e=>{
+  const v=e.target;
+  if(e.isIntersecting && !reduced){ v.play().catch(()=>{}); } else { v.pause(); }
+}),{threshold:.25});
+document.querySelectorAll('.vidfeature video, .herovid').forEach(v=>vio.observe(v));
 </script>
 </body>
 </html>
