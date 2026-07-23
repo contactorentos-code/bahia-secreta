@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bahía Secreta — La Herradura · Costa Tropical</title>
-<meta name="description" content="Oportunidad de inversión: Sector P-6 (SC2) de La Herradura, Almuñécar. 17,8 ha de suelo turístico en primera línea de la Costa Tropical.">
+<meta name="description" content="Oportunidad de inversión: Sector P-6 (SC2) de La Herradura, Almuñécar. 17,0 ha de suelo residencial en la Costa Tropical.">
 <!-- Open Graph / WhatsApp preview -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bahía Secreta">
 <meta property="og:title" content="Bahía Secreta — La Herradura · Costa Tropical">
-<meta property="og:description" content="17,8 ha de suelo turístico en primera línea de playa. Oportunidad de inversión junto al hotel DAIA 5★. Dossier confidencial.">
+<meta property="og:description" content="17,0 ha de suelo residencial junto a la playa. Oportunidad de inversión junto al hotel DAIA 5★. Dossier confidencial.">
 <meta property="og:url" content="https://laherradura.viflip-granada.com/">
 <meta property="og:image" content="https://laherradura.viflip-granada.com/assets/og_preview.jpg">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,7 @@
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bahía Secreta — La Herradura · Costa Tropical">
-<meta name="twitter:description" content="17,8 ha de suelo turístico en primera línea de playa junto al hotel DAIA 5★.">
+<meta name="twitter:description" content="17,0 ha de suelo residencial junto a la playa junto al hotel DAIA 5★.">
 <meta name="twitter:image" content="https://laherradura.viflip-granada.com/assets/og_preview.jpg">
 <link rel="icon" type="image/png" href="assets/emblem_bs1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,6 +85,20 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
 .hero-emblem{height:clamp(84px,10vw,132px);margin-bottom:22px;display:block;filter:drop-shadow(0 4px 18px rgba(0,0,0,.35))}
 .emblem-block{height:64px;display:block;margin:0 auto 18px}
 
+/* PROMO FILM */
+.filmband{position:relative;background:#07161c;padding:0}
+.filmwrap{position:relative;max-width:1180px;margin:0 auto;aspect-ratio:16/9;overflow:hidden;border-radius:4px}
+.filmwrap video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000;display:block}
+.filmwrap .film-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:opacity .5s}
+.filmwrap .film-play{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;cursor:pointer;
+  background:linear-gradient(180deg,rgba(7,22,28,.15),rgba(7,22,28,.55));transition:opacity .4s;border:0;color:var(--sand);width:100%}
+.filmwrap .film-play .pbtn{width:84px;height:84px;border-radius:50%;border:2px solid var(--brass);background:rgba(7,22,28,.35);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(3px);transition:transform .3s,background .3s}
+.filmwrap .film-play:hover .pbtn{transform:scale(1.08);background:rgba(195,154,91,.28)}
+.filmwrap .film-play .pbtn svg{width:30px;height:30px;fill:var(--brass-2);margin-left:5px}
+.filmwrap .film-play .plabel{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cal)}
+.filmwrap.playing .film-play,.filmwrap.playing .film-poster{opacity:0;pointer-events:none}
+.filmband .film-cap{max-width:1180px;margin:16px auto 0;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,243,236,.5);text-align:center}
+
 /* STАТ CARDS */
 .stat{border:1px solid rgba(195,154,91,.3);padding:30px 26px;background:rgba(255,255,255,.02);border-radius:3px}
 .stat .n{font-family:var(--serif);font-size:2.9rem;color:var(--brass-2);line-height:1}
@@ -149,7 +163,7 @@ nav .links a{opacity:.8;transition:.2s}nav .links a:hover{opacity:1;color:var(--
   .hair{display:none!important}
   /* emblema de marca arriba a la derecha en cada pagina del dossier */
   section>.wrap:first-of-type{position:relative}
-  section>.wrap:first-of-type::before{content:'';position:absolute;top:-4mm;right:0;width:13mm;height:13mm;
+  section>.wrap:first-of-type::before{content:'';position:absolute;top:8mm;right:10mm;width:13mm;height:13mm;
     background:url('assets/emblem_bs1.png') center/contain no-repeat;opacity:.9}
   section#contacto>.wrap:first-of-type::before{display:none}
   .emblem-block{height:46px!important;max-height:none!important}
@@ -238,29 +252,49 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <img class="hero-emblem" src="assets/emblem_bs1.png" alt="Emblema Bahía Secreta">
     <div class="label" data-es="Oportunidad de inversión · Costa Tropical, España" data-en="Investment opportunity · Costa Tropical, Spain">Oportunidad de inversión · Costa Tropical, España</div>
     <h1>Bahía Secreta</h1>
-    <div class="sub" data-es="El último gran suelo frente al mar de La Herradura" data-en="The last great seafront land in La Herradura">El último gran suelo frente al mar de La Herradura</div>
+    <div class="sub" data-es="El último gran suelo junto al mar de La Herradura" data-en="The last great land by the sea in La Herradura">El último gran suelo junto al mar de La Herradura</div>
     <div class="meta">
-      <span data-es="Sector P-6 · 17,8 hectáreas" data-en="Sector P-6 · 17.8 hectares">Sector P-6 · 17,8 hectáreas</span>
-      <span data-es="Uso turístico · 53.415 m² edificables" data-en="Tourist use · 53,415 m² buildable">Uso turístico · 53.415 m² edificables</span>
-      <span data-es="Primera línea de playa" data-en="Beachfront">Primera línea de playa</span>
+      <span data-es="Sector P-6 · 17,0 hectáreas" data-en="Sector P-6 · 17.0 hectares">Sector P-6 · 17,0 hectáreas</span>
+      <span data-es="Uso residencial · 87.000 m² edificables" data-en="Residential use · 87,000 m² buildable">Uso residencial · 87.000 m² edificables</span>
+      <span data-es="Junto a la playa" data-en="By the beach">Junto a la playa</span>
     </div>
   </div>
   <div class="scrollcue">SCROLL</div>
 </header>
+
+<!-- PELÍCULA / PROMO -->
+<section class="filmband" style="padding:64px 5vw">
+  <div class="wrap" style="text-align:center;margin-bottom:34px">
+    <div class="label eyebrow reveal" data-es="La película" data-en="The film">La película</div>
+    <h2 class="h-sec reveal" data-es="Descubre Bahía Secreta" data-en="Discover Bahía Secreta" style="margin-top:8px">Descubre Bahía Secreta</h2>
+  </div>
+  <div class="filmwrap reveal" id="filmwrap">
+    <img class="film-poster" src="assets/B7_hero_bahia_atardecer.jpg" alt="La bahía de La Herradura al atardecer">
+    <video id="promovid" preload="none" playsinline controls poster="assets/B7_hero_bahia_atardecer.jpg">
+      <source src="assets/promo_bahia_secreta.mp4" type="video/mp4">
+    </video>
+    <button class="film-play" id="filmplay" aria-label="Reproducir vídeo con sonido">
+      <span class="pbtn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <span class="plabel" data-es="Reproducir con sonido" data-en="Play with sound">Reproducir con sonido</span>
+    </button>
+  </div>
+  <div class="film-cap reveal" data-es="Recreación audiovisual · imágenes ilustrativas del proyecto" data-en="Audiovisual recreation · illustrative project imagery">Recreación audiovisual · imágenes ilustrativas del proyecto</div>
+</section>
+<div class="hair"></div>
 
 <!-- OPORTUNIDAD -->
 <section id="oportunidad">
   <div class="wrap">
     <div class="label eyebrow reveal" data-es="La oportunidad" data-en="The opportunity">La oportunidad</div>
     <h2 class="h-sec reveal" data-es="Una pieza irrepetible en la costa que viene" data-en="An irreplaceable piece on the coast of the future">Una pieza irrepetible en la costa que viene</h2>
-    <p class="lead reveal" data-es="Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,8 hectáreas de suelo urbanizable de uso turístico en primera línea de una de las bahías más bellas del Mediterráneo español. Un enclave protegido por las montañas de la Almijara, a las puertas de un nuevo ciclo premium impulsado por el primer hotel de 5 estrellas de la Costa Tropical." data-en="Bahía Secreta is the development brand for Sector P-6 (SC2) in La Herradura, Almuñécar: 17.8 hectares of tourist-use developable land on the first line of one of the most beautiful bays of the Spanish Mediterranean. A cove sheltered by the Almijara mountains, on the verge of a new premium cycle driven by the first 5-star hotel on the Costa Tropical.">Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,8 hectáreas de suelo urbanizable de uso turístico en primera línea de una de las bahías más bellas del Mediterráneo español.</p>
+    <p class="lead reveal" data-es="Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,0 hectáreas de suelo urbanizable de uso residencial junto a una de las bahías más bellas del Mediterráneo español. Un enclave protegido por las montañas de la Almijara, a las puertas de un nuevo ciclo premium impulsado por el primer hotel de 5 estrellas de la Costa Tropical." data-en="Bahía Secreta is the development brand for Sector P-6 (SC2) in La Herradura, Almuñécar: 17.0 hectares of residential-use developable land beside one of the most beautiful bays of the Spanish Mediterranean. A cove sheltered by the Almijara mountains, on the verge of a new premium cycle driven by the first 5-star hotel on the Costa Tropical.">Bahía Secreta es la marca de desarrollo del Sector P-6 (SC2) de La Herradura, en Almuñécar: 17,0 hectáreas de suelo urbanizable de uso residencial junto a una de las bahías más bellas del Mediterráneo español.</p>
     <div class="grid four" style="margin-top:52px">
-      <div class="stat reveal"><div class="n">17,8 ha</div><div class="t" data-es="Superficie del sector · 178.048,49 m²s (PGOU)" data-en="Sector surface · 178,048.49 m² (PGOU)">Superficie del sector · 178.048,49 m²s (PGOU)</div></div>
-      <div class="stat reveal"><div class="n">53.415</div><div class="t" data-es="m² de techo edificable" data-en="m² of buildable floor">m² de techo edificable</div></div>
+      <div class="stat reveal"><div class="n">17,0 ha</div><div class="t" data-es="Superficie del sector · 169.917,31 m²s (PGOU)" data-en="Sector surface · 169,917.31 m² (PGOU)">Superficie del sector · 169.917,31 m²s (PGOU)</div></div>
+      <div class="stat reveal"><div class="n">87.000</div><div class="t" data-es="m² de techo edificable" data-en="m² of buildable floor">m² de techo edificable</div></div>
       <div class="stat reveal"><div class="n">500–700</div><div class="t" data-es="€/m² · precio de oferta del suelo" data-en="€/m² · land offer price">€/m² · precio del suelo</div></div>
       <div class="stat reveal"><div class="n" style="font-size:2rem">5★ DAIA</div><div class="t" data-es="hotel catalizador a &lt;1 km" data-en="catalyst hotel &lt;1 km away">hotel catalizador a &lt;1 km</div></div>
     </div>
-    <p class="reveal" style="font-size:.72rem;color:rgba(246,243,236,.45);line-height:1.6;margin-top:18px;max-width:760px" data-es="Fuente oficial: Avance del PGOU de Almuñécar — Documento de Propuesta, cap. XI «Aspectos Cuantitativos», cuadro «Ámbitos de Suelo Urbanizable»: sector SC2 La Herradura — 178.048,49 m² de suelo (17,80 ha), uso global turístico, edificabilidad 0,30 m²t/m²s → 53.414,55 m²t." data-en="Official source: Almuñécar Draft General Plan (PGOU) — Proposal Document, ch. XI 'Quantitative Aspects', 'Developable Land' table: sector SC2 La Herradura — 178,048.49 m² of land (17.80 ha), global tourist use, buildability 0.30 m²/m² → 53,414.55 m² of floor area.">Fuente oficial: Avance del PGOU de Almuñécar — Documento de Propuesta, cap. XI «Aspectos Cuantitativos», cuadro «Ámbitos de Suelo Urbanizable»: sector SC2 La Herradura — 178.048,49 m² de suelo (17,80 ha), uso global turístico, edificabilidad 0,30 m²t/m²s → 53.414,55 m²t.</p>
+    <p class="reveal" style="font-size:.72rem;color:rgba(246,243,236,.45);line-height:1.6;margin-top:18px;max-width:760px" data-es="Fuente oficial: ficha urbanística del PGOU de Almuñécar en Aprobación Provisional (10/03/2023), sector SUS-R-15 «Herradura Playa» (ex P-6) — 169.917,31 m² de suelo (16,99 ha), uso global residencial, edificabilidad 0,51 m²t/m²s → 87.000 m²t, 435 viviendas máx. y 40% de reserva de VPO." data-en="Official source: planning sheet of Almuñécar's General Plan under Provisional Approval (10/03/2023), sector SUS-R-15 'Herradura Playa' (former P-6) — 169,917.31 m² of land (16.99 ha), global residential use, buildability 0.51 m²/m² → 87,000 m² of floor area, up to 435 dwellings and a 40% VPO reserve.">Fuente oficial: ficha urbanística del PGOU de Almuñécar en Aprobación Provisional (10/03/2023), sector SUS-R-15 «Herradura Playa» (ex P-6) — 169.917,31 m² de suelo (16,99 ha), uso global residencial, edificabilidad 0,51 m²t/m²s → 87.000 m²t, 435 viviendas máx. y 40% de reserva de VPO.</p>
   </div>
 </section>
 <div class="hair"></div>
@@ -271,13 +305,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <div class="row">
       <div class="reveal">
         <div class="label eyebrow" data-es="El activo · Sector P-6 (SC2)" data-en="The asset · Sector P-6 (SC2)">El activo · Sector P-6 (SC2)</div>
-        <h2 class="h-sec" data-es="17,8 hectáreas frente al mar, sin desarrollar desde 1987" data-en="17.8 seafront hectares, undeveloped since 1987">17,8 hectáreas frente al mar, sin desarrollar desde 1987</h2>
-        <p data-es="El Plan Parcial del P-6 nunca llegó a ejecutarse. Hoy, el nuevo PGOU de Almuñécar lo recoge como sector SC2 con uso global turístico y una edificabilidad de 0,30 m²t/m²s. Es, sencillamente, el mayor suelo finalista frente a la playa de La Herradura." data-en="The P-6 Partial Plan was never executed. Today, Almuñécar's new General Plan classifies it as sector SC2 with global tourist use and a buildability ratio of 0.30 m²t/m²s. It is, quite simply, the largest development-ready seafront land in La Herradura.">El Plan Parcial del P-6 nunca llegó a ejecutarse. Hoy, el nuevo PGOU de Almuñécar lo recoge como sector SC2 con uso global turístico y una edificabilidad de 0,30 m²t/m²s.</p>
+        <h2 class="h-sec" data-es="17,0 hectáreas junto al mar, sin desarrollar desde 1987" data-en="17.0 hectares by the sea, undeveloped since 1987">17,0 hectáreas junto al mar, sin desarrollar desde 1987</h2>
+        <p data-es="El Plan Parcial del P-6 nunca llegó a ejecutarse. Hoy, el nuevo PGOU de Almuñécar lo recoge como sector SUS-R-15 «Herradura Playa» con uso global residencial y una edificabilidad de 0,51 m²t/m²s. Es, sencillamente, el mayor suelo finalista junto a la playa de La Herradura." data-en="The P-6 Partial Plan was never executed. Today, Almuñécar's new General Plan classifies it as sector SUS-R-15 'Herradura Playa' with global residential use and a buildability ratio of 0.51 m²t/m²s. It is, quite simply, the largest development-ready land by the beach in La Herradura.">El Plan Parcial del P-6 nunca llegó a ejecutarse. Hoy, el nuevo PGOU de Almuñécar lo recoge como sector SUS-R-15 «Herradura Playa» con uso global residencial y una edificabilidad de 0,51 m²t/m²s.</p>
         <ul>
-          <li data-es="Superficie: 178.048 m² (17,8 ha) de suelo urbanizable sectorizado" data-en="Surface: 178,048 m² (17.8 ha) of sectorised developable land">Superficie: 178.048 m² (17,8 ha) de suelo urbanizable sectorizado</li>
-          <li data-es="Uso global turístico · edificabilidad 0,30 → 53.415 m² de techo" data-en="Global tourist use · buildability 0.30 → 53,415 m² of floor area">Uso global turístico · edificabilidad 0,30 → 53.415 m² de techo</li>
-          <li data-es="Producto propuesto: 55% apart-hotel 5★ + 45% branded residences de lujo" data-en="Proposed product: 55% 5★ apart-hotel + 45% luxury branded residences">Producto propuesto: 55% apart-hotel 5★ + 45% branded residences de lujo</li>
-          <li data-es="Ubicación: primera línea, entre el Barranco de las Tejas y Peña Parda" data-en="Location: beachfront, between Barranco de las Tejas and Peña Parda">Ubicación: primera línea, entre el Barranco de las Tejas y Peña Parda</li>
+          <li data-es="Superficie: 169.917 m² (17,0 ha) de suelo urbanizable sectorizado" data-en="Surface: 169,917 m² (17.0 ha) of sectorised developable land">Superficie: 169.917 m² (17,0 ha) de suelo urbanizable sectorizado</li>
+          <li data-es="Uso global residencial · edificabilidad 0,51 → 87.000 m² de techo" data-en="Global residential use · buildability 0.51 → 87,000 m² of floor area">Uso global residencial · edificabilidad 0,51 → 87.000 m² de techo</li>
+          <li data-es="Producto: residencial de lujo (branded residences) · 40% VPO obligatorio por el PGOU" data-en="Product: luxury residential (branded residences) · 40% mandatory VPO">Producto: residencial de lujo (branded residences) · 40% VPO obligatorio por el PGOU</li>
+          <li data-es="Ubicación: entre la playa y la N-340, del Barranco de las Tejas a Peña Parda" data-en="Location: between the beach and the N-340 road, from Barranco de las Tejas to Peña Parda">Ubicación: entre la playa y la N-340, del Barranco de las Tejas a Peña Parda</li>
         </ul>
       </div>
       <div class="reveal"><img src="assets/R1_aerea_plan_construido.jpg" alt="Vista aérea del sector P-6 desarrollado sobre la bahía de La Herradura"></div>
@@ -308,13 +342,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <div class="wrap">
     <div class="label eyebrow reveal" data-es="Parámetros urbanísticos" data-en="Planning parameters">Parámetros urbanísticos</div>
     <h2 class="h-sec reveal" data-es="Lo que permite el planeamiento" data-en="What the plan allows">Lo que permite el planeamiento</h2>
-    <p class="lead reveal" data-es="Parámetros del sector SC2 según el Avance del PGOU de Almuñécar y el sector colindante MP-98 (ya aprobado, mismo índice 0,30). Cifras orientativas, a fijar en el Plan Parcial." data-en="SC2 parameters per Almuñécar's draft General Plan and the adjacent, already-approved MP-98 sector (same 0.30 ratio). Indicative figures, to be fixed in the Partial Plan.">Parámetros del sector SC2 según el Avance del PGOU y el sector colindante MP-98 (mismo índice 0,30).</p>
+    <p class="lead reveal" data-es="Parámetros oficiales del sector SUS-R-15 «Herradura Playa» según la ficha del PGOU de Almuñécar (Aprobación Provisional 2023). Cifras oficiales; el reparto por tipologías y las dotaciones se fijan en el Plan Parcial." data-en="Official SUS-R-15 'Herradura Playa' parameters per Almuñécar's General Plan sheet (Provisional Approval 2023). Official figures; typology split and facilities to be fixed in the Partial Plan.">Parámetros oficiales del sector SUS-R-15 «Herradura Playa» (ficha PGOU, Aprobación Provisional 2023).</p>
 
     <div class="grid four reveal" style="margin-top:44px">
-      <div class="stat"><div class="n">0,30</div><div class="t" data-es="m²t/m²s · edificabilidad bruta" data-en="FAR · gross buildability">m²t/m²s · edificabilidad</div></div>
-      <div class="stat"><div class="n">53.415</div><div class="t" data-es="m²t de techo edificable" data-en="m² of buildable floor area">m²t de techo edificable</div></div>
-      <div class="stat"><div class="n">≤267</div><div class="t" data-es="viviendas máx. · 15 viv/ha" data-en="max. dwellings · 15/ha">viviendas máx. · 15 viv/ha</div></div>
-      <div class="stat"><div class="n" style="font-size:2.2rem" data-es="3 plantas" data-en="3 storeys">3 plantas</div><div class="t" data-es="altura máx. · 10 m (ref. MP-98)" data-en="max. height · 10 m (MP-98 ref.)">altura máx. · 10 m</div></div>
+      <div class="stat"><div class="n">0,51</div><div class="t" data-es="m²t/m²s · edificabilidad bruta" data-en="FAR · gross buildability">m²t/m²s · edificabilidad</div></div>
+      <div class="stat"><div class="n">87.000</div><div class="t" data-es="m²t de techo edificable" data-en="m² of buildable floor area">m²t de techo edificable</div></div>
+      <div class="stat"><div class="n">435</div><div class="t" data-es="viviendas máx. · 26 viv/ha" data-en="max. dwellings · 26/ha">viviendas máx. · 26 viv/ha</div></div>
+      <div class="stat"><div class="n">40%</div><div class="t" data-es="reserva de VPO (obligatoria)" data-en="mandatory VPO reserve">reserva de VPO</div></div>
     </div>
 
     <div class="grid two reveal" style="margin-top:60px;gap:50px">
@@ -329,12 +363,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
         </div>
       </div>
       <div class="dcard">
-        <h3 data-es="Mix de usos (escenario ref. MP-98)" data-en="Use mix (MP-98 scenario)">Mix de usos</h3>
-        <div class="donut" style="background:conic-gradient(#C39A5B 0 51%,#3E9EA6 51% 100%)"><div class="c"><b>51/49</b><span data-es="tur · resid" data-en="tour · resid">tur · resid</span></div></div>
+        <h3 data-es="Reparto residencial (ficha SUS-R-15)" data-en="Residential split (SUS-R-15 sheet)">Reparto residencial</h3>
+        <div class="donut" style="background:conic-gradient(#3E9EA6 0 60%,#C39A5B 60% 100%)"><div class="c"><b>60/40</b><span data-es="libre · VPO" data-en="open · VPO">libre · VPO</span></div></div>
         <div class="legend">
-          <div><i style="background:#C39A5B"></i><span data-es="Turístico (hotel, aparthotel)" data-en="Tourism (hotel, apart-hotel)">Turístico (hotel, aparthotel)</span><b>~51%</b></div>
-          <div><i style="background:#3E9EA6"></i><span data-es="Residencial de lujo" data-en="Luxury residential">Residencial de lujo</span><b>~49%</b></div>
-          <div><i style="background:rgba(255,255,255,.28)"></i><span data-es="Terciario / comercial (compatible)" data-en="Retail (compatible use)">Terciario / comercial (compatible)</span><b>≤5%</b></div>
+          <div><i style="background:#3E9EA6"></i><span data-es="Vivienda libre" data-en="Open-market housing">Vivienda libre</span><b>~60%</b></div>
+          <div><i style="background:#C39A5B"></i><span data-es="Vivienda protegida (VPO)" data-en="Protected housing (VPO)">Vivienda protegida (VPO)</span><b>40%</b></div>
+          <div><i style="background:rgba(255,255,255,.28)"></i><span data-es="Terciario / comercial (compatible, según Plan Parcial)" data-en="Retail (compatible use, per Partial Plan)">Terciario / comercial (compatible)</span><b>—</b></div>
         </div>
       </div>
     </div>
@@ -342,17 +376,17 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     <div class="reveal" style="margin-top:64px;max-width:840px">
       <h3 style="font-family:var(--sans);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:26px" data-es="Programa de viviendas · tipologías" data-en="Housing programme · typologies">Programa de viviendas · tipologías</h3>
       <div class="ubar">
-        <div class="lab"><span data-es="Plurifamiliar (bloque abierto, 3–5 plantas)" data-en="Multi-family (open blocks, 3–5 storeys)">Plurifamiliar (bloque, 3–5 plantas)</span><b>~105–145 <span style="font-size:.8rem;font-family:var(--sans);color:var(--sand)">uds</span></b></div>
-        <div class="track"><div class="fill" style="width:68%;background:linear-gradient(90deg,#3E9EA6,#7fc4c9)"></div></div>
+        <div class="lab"><span data-es="Vivienda libre" data-en="Open-market housing">Vivienda libre</span><b>~261 <span style="font-size:.8rem;font-family:var(--sans);color:var(--sand)">uds</span></b></div>
+        <div class="track"><div class="fill" style="width:60%;background:linear-gradient(90deg,#3E9EA6,#7fc4c9)"></div></div>
       </div>
       <div class="ubar">
-        <div class="lab"><span data-es="Unifamiliar (aislada / pareada, PB+1)" data-en="Single-family (detached / semi, G+1)">Unifamiliar (aislada / pareada)</span><b>~55–65 <span style="font-size:.8rem;font-family:var(--sans);color:var(--sand)">uds</span></b></div>
-        <div class="track"><div class="fill" style="width:32%;background:linear-gradient(90deg,#5E6B52,#8a9a72)"></div></div>
+        <div class="lab"><span data-es="Vivienda protegida (VPO)" data-en="Protected housing (VPO)">Vivienda protegida (VPO)</span><b>~174 <span style="font-size:.8rem;font-family:var(--sans);color:var(--sand)">uds</span></b></div>
+        <div class="track"><div class="fill" style="width:40%;background:linear-gradient(90deg,#5E6B52,#8a9a72)"></div></div>
       </div>
-      <p style="font-size:.95rem;color:var(--sand);margin-top:20px" data-es="Rango total: 160–210 viviendas de lujo, más ~27.000 m²t turísticos, equivalentes a ~270–360 plazas hoteleras (hotel + apart-hotel 5★)." data-en="Total range: 160–210 luxury dwellings, plus ~27,000 m²t of tourism use, equivalent to ~270–360 hotel keys (hotel + 5★ apart-hotel).">Rango total: 160–210 viviendas de lujo + ~27.000 m²t turísticos (~270–360 plazas hoteleras).</p>
+      <p style="font-size:.95rem;color:var(--sand);margin-top:20px" data-es="Hasta 435 viviendas · densidad media-baja 26 viv/ha · reparto ≈261 libres / ≈174 VPO (40% del techo residencial), a fijar en el Plan Parcial." data-en="Up to 435 dwellings · low-medium density 26 units/ha · split ≈261 open-market / ≈174 VPO (40% of residential floor area), to be fixed in the Partial Plan.">Hasta 435 viviendas · 26 viv/ha · ≈261 libres / ≈174 VPO.</p>
     </div>
 
-    <p class="disc reveal" data-es="Fuente: Avance del PGOU de Almuñécar (tabla de sectores) y ordenanzas del sector colindante MP-98, con estándares de cesión de la Ley LISTA/LOUA (espacios libres ≥20%, equipamientos ≥5%). El uso global del sector es turístico; el componente residencial y el reparto por tipologías son escenarios de referencia según el comparable MP-98, a fijar en el Plan Parcial y sujetos a la aprobación definitiva del planeamiento." data-en="Source: Almuñécar's draft General Plan (sector table) and the adjacent MP-98 sector ordinances, with LISTA/LOUA cession standards (open space ≥20%, facilities ≥5%). The sector's global use is tourism; the residential component and typology split are reference scenarios per the MP-98 comparable, to be fixed in the Partial Plan and subject to final planning approval.">Fuente: Avance del PGOU de Almuñécar y ordenanzas del sector colindante MP-98, con estándares de cesión LISTA/LOUA. El componente residencial y las tipologías son escenarios de referencia (comparable MP-98), a fijar en el Plan Parcial.</p>
+    <p class="disc reveal" data-es="Fuente: ficha urbanística oficial del PGOU de Almuñécar en Aprobación Provisional (Pleno 10/03/2023), sector SUS-R-15 «Herradura Playa» (AR-15). Datos estructurales oficiales: uso global residencial, 169.917,31 m²s, edificabilidad 0,51 → 87.000 m²t, 435 viviendas máx., densidad 26 viv/ha y reserva del 40% para VPO. El reparto libre/VPO por viviendas, las zonas verdes, el terciario compatible y las tipologías se fijarán en el Plan Parcial conforme a la Ley LISTA/LOUA. Planeamiento pendiente de aprobación definitiva; datos sujetos a verificación en due diligence." data-en="Source: official planning sheet of Almuñécar's General Plan under Provisional Approval (Council 10/03/2023), sector SUS-R-15 'Herradura Playa' (AR-15). Official structural data: global residential use, 169,917.31 m² of land, buildability 0.51 → 87,000 m² of floor area, up to 435 dwellings, density 26 units/ha and a 40% reserve for protected housing (VPO). The open/VPO dwelling split, green areas, compatible retail and typologies will be fixed in the Partial Plan under LISTA/LOUA law. Planning pending final approval; data subject to due-diligence verification.">Fuente: ficha oficial del PGOU de Almuñécar (Aprobación Provisional 10/03/2023), sector SUS-R-15 «Herradura Playa». Uso residencial, 169.917 m²s, 0,51 → 87.000 m²t, 435 viviendas, 40% VPO. Reparto y tipologías a fijar en el Plan Parcial.</p>
   </div>
 </section>
 
@@ -360,8 +394,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <section id="masterplan" class="alt">
   <div class="wrap">
     <div class="label eyebrow reveal" data-es="El masterplan" data-en="The masterplan">El masterplan</div>
-    <h2 class="h-sec reveal" data-es="El sector, ordenado como un resort de baja densidad" data-en="The sector, planned as a low-density resort">El sector, ordenado como un resort de baja densidad</h2>
-    <p class="lead reveal" data-es="Ordenación indicativa de las 17,8 ha sobre la franja litoral real del sector P-6, paralela a la playa de La Herradura: colección de villas privadas, apart-hotel 5★, spa, beach club y un paseo peatonal verde frente al mar." data-en="Indicative masterplan of the 17.8 ha over the real coastal strip of Sector P-6, parallel to La Herradura beach: a private villa collection, a 5★ apart-hotel, spa, beach club and a green seafront promenade.">Ordenación indicativa de las 17,8 ha sobre la franja litoral real del sector P-6, paralela a la playa de La Herradura.</p>
+    <h2 class="h-sec reveal" data-es="El sector, ordenado como un resort de densidad media-baja" data-en="The sector, planned as a low-medium-density resort">El sector, ordenado como un resort de densidad media-baja</h2>
+    <p class="lead reveal" data-es="Ordenación indicativa de las 17,0 ha sobre la franja litoral real del sector P-6, paralela a la playa de La Herradura: colección de villas privadas, residencias de lujo, spa, beach club y un paseo peatonal verde junto al mar." data-en="Indicative masterplan of the 17.0 ha over the real coastal strip of Sector P-6, parallel to La Herradura beach: a private villa collection, luxury residences, spa, beach club and a green promenade by the sea.">Ordenación indicativa de las 17,0 ha sobre la franja litoral real del sector P-6, paralela a la playa de La Herradura.</p>
     <div class="reveal" style="margin-top:30px"><img src="assets/P1_plano_planta_texturas.jpg" alt="Plano en planta del masterplan con texturas" style="width:100%;border-radius:4px;box-shadow:0 30px 60px rgba(0,0,0,.4)"></div>
     <div class="grid two reveal" style="margin-top:24px">
       <img src="assets/R2_perspectiva_plan.jpg" alt="Perspectiva aérea del plan construido" style="width:100%;aspect-ratio:21/9;object-fit:cover;object-position:center;border-radius:4px;box-shadow:0 20px 40px rgba(0,0,0,.35)">
@@ -398,7 +432,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <div class="reveal">
         <span class="badge" data-es="El catalizador" data-en="The catalyst">El catalizador</span>
         <h2 class="h-sec" style="margin-top:18px" data-es="El primer 5 estrellas de la Costa Tropical, ya en obras" data-en="The Costa Tropical's first 5-star hotel, already under construction">El primer 5 estrellas de la Costa Tropical, ya en obras</h2>
-        <p data-es="A menos de 1 km del sector, en primera línea del Paseo Andrés Segovia, se levanta el DAIA Slow Beach Hotel: el primer hotel de 5 estrellas de toda la Costa Tropical, un adults-only de bienestar 'slow beach' promovido por el Grupo Fuerte. Su primera piedra se colocó en junio de 2026 y abrirá hacia 2028. No es una promesa: es la prueba tangible de que el mercado y la administración reposicionan La Herradura hacia el segmento premium." data-en="Less than 1 km from the sector, on the beachfront of Paseo Andrés Segovia, rises the DAIA Slow Beach Hotel: the first 5-star hotel on the entire Costa Tropical, an adults-only 'slow beach' wellness resort developed by Grupo Fuerte. Its foundation stone was laid in June 2026 and it opens around 2028. Not a promise: tangible proof that the market and the administration are repositioning La Herradura into the premium segment.">A menos de 1 km del sector, en primera línea del Paseo Andrés Segovia, se levanta el DAIA Slow Beach Hotel: el primer 5 estrellas de la Costa Tropical, un adults-only 'slow beach' del Grupo Fuerte. Primera piedra en junio de 2026, apertura hacia 2028.</p>
+        <p data-es="A menos de 1 km del sector, junto al Paseo Andrés Segovia, se levanta el DAIA Slow Beach Hotel: el primer hotel de 5 estrellas de toda la Costa Tropical, un adults-only de bienestar 'slow beach' promovido por el Grupo Fuerte. Su primera piedra se colocó en junio de 2026 y abrirá hacia 2028. No es una promesa: es la prueba tangible de que el mercado y la administración reposicionan La Herradura hacia el segmento premium." data-en="Less than 1 km from the sector, beside Paseo Andrés Segovia, rises the DAIA Slow Beach Hotel: the first 5-star hotel on the entire Costa Tropical, an adults-only 'slow beach' wellness resort developed by Grupo Fuerte. Its foundation stone was laid in June 2026 and it opens around 2028. Not a promise: tangible proof that the market and the administration are repositioning La Herradura into the premium segment.">A menos de 1 km del sector, junto al Paseo Andrés Segovia, se levanta el DAIA Slow Beach Hotel: el primer 5 estrellas de la Costa Tropical, un adults-only 'slow beach' del Grupo Fuerte. Primera piedra en junio de 2026, apertura hacia 2028.</p>
         <div class="grid three" style="margin-top:30px">
           <div class="stat"><div class="n">220</div><div class="t" data-es="habitaciones 5★" data-en="5★ rooms">habitaciones 5★</div></div>
           <div class="stat"><div class="n">14,7 M€</div><div class="t" data-es="inversión hotelera" data-en="hotel investment">inversión hotelera</div></div>
@@ -415,10 +449,10 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <div class="wrap">
     <div class="label eyebrow reveal" data-es="El mercado" data-en="The market">El mercado</div>
     <h2 class="h-sec reveal" data-es="Precios al alza y un descuento del 24% frente a Marbella" data-en="Rising prices and a 24% discount to Marbella">Precios al alza y un descuento del 24% frente a Marbella</h2>
-    <p class="lead reveal" data-es="La Herradura cotiza hoy entre 3.318 y 3.562 €/m², con subidas del 13–20% interanual. El producto de lujo en primera línea aún no existe en la zona: cuando exista, el recorrido de precio es real." data-en="La Herradura trades today between €3,318 and €3,562/m², rising 13–20% year-on-year. First-line luxury product does not yet exist here: when it does, the price upside is real.">La Herradura cotiza hoy entre 3.318 y 3.562 €/m², con subidas del 13–20% interanual. El producto de lujo en primera línea aún no existe en la zona.</p>
+    <p class="lead reveal" data-es="La Herradura cotiza hoy entre 3.318 y 3.562 €/m², con subidas del 13–20% interanual. El producto de lujo aún no existe en la zona: cuando exista, el recorrido de precio es real." data-en="La Herradura trades today between €3,318 and €3,562/m², rising 13–20% year-on-year. Luxury product does not yet exist here: when it does, the price upside is real.">La Herradura cotiza hoy entre 3.318 y 3.562 €/m², con subidas del 13–20% interanual. El producto de lujo aún no existe en la zona.</p>
     <div class="grid four reveal" style="margin-top:48px">
       <div class="stat"><div class="n">+13–20%</div><div class="t" data-es="subida interanual" data-en="year-on-year growth">subida interanual</div></div>
-      <div class="stat"><div class="n">4.500–6.500</div><div class="t" data-es="€/m² producto lujo 1ª línea" data-en="€/m² first-line luxury">€/m² producto lujo 1ª línea</div></div>
+      <div class="stat"><div class="n">4.500–6.500</div><div class="t" data-es="€/m² producto residencial de lujo" data-en="€/m² luxury residential product">€/m² producto residencial de lujo</div></div>
       <div class="stat"><div class="n">−24%</div><div class="t" data-es="gap de precio vs Marbella" data-en="price gap vs Marbella">gap de precio vs Marbella</div></div>
       <div class="stat"><div class="n">320</div><div class="t" data-es="días de sol / año" data-en="days of sun / year">días de sol / año</div></div>
     </div>
@@ -437,7 +471,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <figure class="med"><img src="assets/H1_casa_lujo.jpg" alt="Villa de lujo a pie de jardín"><figcaption data-es="Villa de lujo a pie de jardín" data-en="Ground-level luxury villa">Villa de lujo a pie de jardín</figcaption></figure>
       <figure class="med"><img src="assets/B4_calle_peatonal.jpg" alt="Calle peatonal premium"><figcaption data-es="Paseo peatonal premium" data-en="Premium pedestrian promenade">Paseo peatonal premium</figcaption></figure>
       <figure class="sm"><img src="assets/C1_zona_comun.jpg" alt="Zona común con piscina y pádel"><figcaption data-es="Zona común · piscina y pádel" data-en="Amenities · pool & padel">Zona común · piscina y pádel</figcaption></figure>
-      <figure class="sm"><img src="assets/BC1_beach_club.jpg" alt="Beach club a pie de playa"><figcaption data-es="Beach club a pie de playa" data-en="Beachfront beach club">Beach club a pie de playa</figcaption></figure>
+      <figure class="sm"><img src="assets/BC1_beach_club.jpg" alt="Club de playa"><figcaption data-es="Club de playa" data-en="Beach club">Club de playa</figcaption></figure>
       <figure class="sm"><img src="assets/INT1_interior.jpg" alt="Interior de lujo con vistas a las zonas comunes y el mar desde una 5ª planta"><figcaption data-es="Salón con vistas · zonas comunes y mar" data-en="Living room · amenities & sea view">Salón con vistas · zonas comunes y mar</figcaption></figure>
     </div>
   </div>
@@ -453,13 +487,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <section id="numeros">
   <div class="wrap">
     <div class="label eyebrow reveal" data-es="El precio" data-en="The price">El precio</div>
-    <h2 class="h-sec reveal" data-es="Los últimos metros de suelo virgen junto al mar" data-en="The last metres of untouched seafront land">Los últimos metros de suelo virgen junto al mar</h2>
-    <p class="lead reveal" data-es="El sector P-6 es la última gran bolsa de suelo finalista frente a la playa de La Herradura: 17,8 hectáreas de uso turístico en un paraje natural resguardado entre dos cabos, con la Sierra de la Almijara cayendo al mar. Un activo escaso e irrepetible, que solo aparece una vez por generación." data-en="Sector P-6 is the last large development-ready seafront parcel in La Herradura: 17.8 hectares of tourism-use land in a natural setting sheltered between two headlands, where the Sierra de la Almijara drops into the sea. A scarce, irreplaceable asset that appears only once a generation.">El sector P-6 es la última gran bolsa de suelo finalista frente a la playa de La Herradura: 17,8 hectáreas en un paraje natural entre dos cabos. Un activo escaso e irrepetible.</p>
+    <h2 class="h-sec reveal" data-es="Los últimos metros de suelo virgen junto al mar" data-en="The last metres of untouched land by the sea">Los últimos metros de suelo virgen junto al mar</h2>
+    <p class="lead reveal" data-es="El sector P-6 es la última gran bolsa de suelo finalista junto a la playa de La Herradura: 17,0 hectáreas de uso residencial en un paraje natural resguardado entre dos cabos, con la Sierra de la Almijara cayendo al mar. Un activo escaso e irrepetible, que solo aparece una vez por generación." data-en="Sector P-6 is the last large development-ready parcel by the beach in La Herradura: 17.0 hectares of residential-use land in a natural setting sheltered between two headlands, where the Sierra de la Almijara drops into the sea. A scarce, irreplaceable asset that appears only once a generation.">El sector P-6 es la última gran bolsa de suelo finalista junto a la playa de La Herradura: 17,0 hectáreas en un paraje natural entre dos cabos. Un activo escaso e irrepetible.</p>
     <div class="grid four reveal" style="margin-top:48px">
       <div class="stat"><div class="n">500–700</div><div class="t" data-es="€/m² de suelo" data-en="€/m² of land">€/m² de suelo</div></div>
-      <div class="stat"><div class="n">17,8 ha</div><div class="t" data-es="178.048 m² · en una sola pieza" data-en="178,048 m² · single parcel">178.048 m² · una sola pieza</div></div>
-      <div class="stat"><div class="n" style="font-size:2rem">1ª línea</div><div class="t" data-es="frente a la playa" data-en="beachfront">frente a la playa</div></div>
-      <div class="stat"><div class="n" style="font-size:2rem" data-es="Turístico" data-en="Tourism">Turístico</div><div class="t" data-es="uso global · baja densidad" data-en="global use · low density">uso global · baja densidad</div></div>
+      <div class="stat"><div class="n">17,0 ha</div><div class="t" data-es="169.917 m² · en una sola pieza" data-en="169,917 m² · single parcel">169.917 m² · una sola pieza</div></div>
+      <div class="stat"><div class="n" style="font-size:2rem">Junto al mar</div><div class="t" data-es="a un paso de la playa" data-en="steps from the beach">a un paso de la playa</div></div>
+      <div class="stat"><div class="n" style="font-size:2rem" data-es="Residencial" data-en="Residential">Residencial</div><div class="t" data-es="uso global · densidad media-baja" data-en="global use · low-medium density">uso global · densidad media-baja</div></div>
     </div>
     <p class="disc reveal" data-es="Precio de oferta orientativo del suelo, variable según parcela. La documentación urbanística, técnica y de mercado se facilita a inversores cualificados, bajo acuerdo de confidencialidad, para su propio análisis. No constituye oferta vinculante ni recomendación de inversión." data-en="Indicative land offer price, varying by plot. Planning, technical and market documentation is provided to qualified investors, under a confidentiality agreement, for their own analysis. Not a binding offer nor investment advice.">Precio de oferta orientativo del suelo, según parcela. La documentación se facilita a inversores cualificados bajo acuerdo de confidencialidad para su propio análisis. No constituye oferta vinculante ni recomendación de inversión.</p>
   </div>
@@ -539,6 +573,12 @@ const vio=new IntersectionObserver((es)=>es.forEach(e=>{
   if(e.isIntersecting && !reduced){ v.play().catch(()=>{}); } else { v.pause(); }
 }),{threshold:.25});
 document.querySelectorAll('.vidfeature video, .herovid').forEach(v=>vio.observe(v));
+// película promo: click = reproducir con sonido
+const fw=document.getElementById('filmwrap'), pv=document.getElementById('promovid'), fp=document.getElementById('filmplay');
+if(fw&&pv&&fp){
+  fp.addEventListener('click',()=>{ fw.classList.add('playing'); pv.muted=false; pv.play().catch(()=>{}); });
+  pv.addEventListener('play',()=>fw.classList.add('playing'));
+}
 </script>
 </body>
 </html>
